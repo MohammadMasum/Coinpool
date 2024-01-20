@@ -1,0 +1,150 @@
+/* banner area style
+============================================================================================ */
+.banner-area {
+  position: relative;
+  padding: 260px 0 300px;
+  z-index: 2;
+  // background: url(../img/bg/banner-bg.png) top center no-repeat;
+  // background-size: cover;
+  overflow: hidden;
+  &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      content: "";
+      background: #000;
+      z-index: 1;
+      opacity: .5;
+  }
+  .video-wrap {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .banner-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    h1 {
+        font-size: 55px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        span {
+          background: linear-gradient(to right, #41C5EB, #fff);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+    }
+    p {
+        font-size: 20px;
+        margin-bottom: 25px;
+        color: $white;
+    }
+    .banner-btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
+  }
+  .globe1 {
+		position: absolute;
+		bottom: -5%;
+		left: 5%;
+		z-index: -1;
+		-webkit-animation: move1 100s alternate infinite;
+		animation: move1 30s alternate infinite;
+		.globe-lines {
+			background: url(../img/globe-circle.png) no-repeat;
+			height: 350px;
+			width: 710px;
+			background-size: contain;
+			position: absolute;
+			left: -51.6%;
+			bottom: -15px;
+			z-index: 1;
+		}
+		@-webkit-keyframes move1 {
+			0% {
+				bottom: 5%;
+			}
+			100% {
+				bottom: 100%;
+			}
+		}
+		@keyframes move1 {
+			0% {
+				bottom: 5%;
+			}
+			100% {
+				bottom: 100%;
+			}
+		}
+	}
+}
+
+.welcome-text {
+  border-radius: 10000px;
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0px 4px 13px 0px rgba(255, 255, 255, 0.25) inset;
+  backdrop-filter: blur(20px);
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+
+
+/* ========= earth here ========= */
+.earth {
+	transform: rotate(25deg);
+	margin: auto;
+	border-radius: 50%;
+	background-position: 0 0;
+	background-size: auto 100%;
+	width: 375px;
+	height: 375px;
+	z-index: 1;
+	-webkit-animation: rotate 450s alternate infinite;
+	animation: rotate 450s alternate infinite;
+	.clouds {
+		position: absolute;
+		margin: auto;
+		border-radius: 50%;
+		background: url('../img/bg/cloud-bg1.png') repeat;
+		background-position: 0 0;
+		background-size: auto 100%;
+		-webkit-box-shadow: inset -30px -5px 40px 10px #00000080;
+		box-shadow: inset -30px -5px 40px 10px #00000080;
+		width: 375px;
+		height: 375px;
+		z-index: 10;
+		opacity: 0.7;
+		-webkit-animation: rotate 30s alternate infinite;
+		animation: rotate 30s alternate infinite;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes rotate {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -1000px 0;
+	}
+}
+
+@keyframes rotate {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -1000px 0;
+	}
+}

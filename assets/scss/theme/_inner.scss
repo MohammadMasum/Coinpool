@@ -1,0 +1,22 @@
+/* privacy policy area style
+============================================================================================ */
+.privacy-policy {
+    padding: 80px 0;
+}
+.single-text-item {
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+    p {
+        span {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    }
+    ul {
+        list-style: disc;
+        padding-left: 20px;
+    }
+}

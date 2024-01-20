@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="assets/img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="webfirefly">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>My Coinpool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!--start navigation area-->
+    <header class="header-area" id="header_area">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand " href="index.html "><img src="assets/img/logo.png" alt=" "></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="active nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#idos">Idos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#live">Live Stream</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#eco">ECO</a></li>
+                    </ul>
+                    <ul class="header-btn-wrap navbar-nav ms-auto">
+                        <li><button type="button" class="header-btn" data-bs-toggle="modal" data-bs-target="#join">Create an account <img src="assets/img/wallet.svg" alt=""></button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--end navigation area-->
+
+    <!-- banner area start -->
+    <section class="banner-area">
+        <video class="video-wrap" autoplay muted loop>
+            <source src="assets/img/Abstract_Background_Binary.mp4" type="video/mp4">
+            <source src="assets/img/Abstract_Background_Binary.mp4" type="video/ogg">
+        </video>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="banner-content">
+                        <h6 data-aos="fade-down" class="welcome-text">👋 Welcome to the Mycoinpool</h6>
+                        <h1 data-aos="fade-down">Your Gateway to <span>Exclusive</span> IDO Opportunities</h1>
+                        <p data-aos="fade-down">A platform, where you can give donations to a user directly and you can receive donations from a user directly. </p>
+                        <div data-aos="fade-up" class="banner-btns">
+                            <a href="#" class="primary-btn">Apply to Lunch IDO <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="bordered-btn">How to start?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- animation globe1  -->
+        <!-- <div class="globe1">
+            <div class="globe-lines"></div>
+            <div class="earth">
+                <div class="clouds"></div>
+            </div>
+        </div> -->
+    </section>
+    <!-- banner area end -->
+  
+    <!-- Join Modal -->
+    <div class="modal custom-modal fade" id="join" tabindex="-1" aria-labelledby="joinLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+                <div class="modal-body">
+                    <div class="modal-form-head">
+                        <a href="#" class="logo"><img src="assets/img/logo.png" alt=""></a>
+                        <h3>Wellcome Back!</h3>
+                        <p>Please login to your account.</p>
+                    </div>
+                    <form action="" class="modal-form">
+                        <div class="form-group">
+                            <label>User ID Or Username</label>
+                            <input type="text" placeholder="User ID Or Username">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter Password">
+                        </div>
+                        <div class="forgot-wrap">
+                            <label class="remember" for="remember"><input type="checkbox" name="remember" id="remember"> Remember Me</label>
+                            <p>Forgot Password</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <button type="submit" class="primary-btn">Join Now on Mycoinpoll <i class="fas fa-arrow-right"></i></button>
+                            <div class="or-wrap">
+                                <span></span>
+                                <p>Or</p>
+                                <span></span>
+                            </div>
+                            <button type="submit" class="google-btn"><img src="assets/img/google.svg" alt=""> Sign in with Google</button>
+                        </div>
+                        <div class="create-account">
+                            <p>Create an account? <button type="button" data-bs-toggle="modal" data-bs-target="#createAccount">Sign up</button></p>
+                        </div>
+                        <ul class="idos-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Create Account Modal -->
+    <div class="modal custom-modal createAccount fade" id="createAccount" tabindex="-1" aria-labelledby="createAccountLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+                <div class="modal-body">
+                    <div class="modal-form-head">
+                        <a href="#" class="logo"><img src="assets/img/logo.png" alt=""></a>
+                        <h3>Create Your Account</h3>
+                        <p>Already Have An Account? <button type="button" data-bs-toggle="modal" data-bs-target="#join">Login In Here</button></p>
+                    </div>
+                    <form action="" class="modal-form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Sponsor ID</label>
+                                    <input type="text" placeholder="Sponsor ID">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Enter Full Name</label>
+                                    <input type="text" placeholder="Enter Full Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Enter Username</label>
+                                    <input type="text" placeholder="Enter Username">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Enter Email Address</label>
+                                    <input type="email" placeholder="Enter Email Address">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Select Country</label>
+                                    <input type="text" placeholder="Select Country">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Enter Phone Number</label>
+                                    <input type="tel" placeholder="Enter Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Select Security Question</label>
+                                    <input type="tel" placeholder="Select Security Question">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label>Enter Answer</label>
+                                    <input type="tel" placeholder="Enter Answer">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="text-desc" for="text-desc"><input type="checkbox" name="text-desc" id="confirm"> I Agreed, the <a href="#">Terms & conditions</a> and <a href="#">Privacy Policy</a></label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="btn-wrap">
+                                    <button type="submit" class="primary-btn">Join Now on Mycoinpoll <i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start brands area  -->
+    <section class="brands-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brands-inner">
+                        <!-- single brands item  -->
+                        <div class="single-brands-item">
+                            <img class="img-fluid" src="assets/img/brands/brand1.png" alt="">
+                        </div>
+                        <!-- single brands item  -->
+                        <div class="single-brands-item">
+                            <img class="img-fluid" src="assets/img/brands/brand2.png" alt="">
+                        </div>
+                        <!-- single brands item  -->
+                        <div class="single-brands-item">
+                            <img class="img-fluid" src="assets/img/brands/brand3.png" alt="">
+                        </div>
+                        <!-- single brands item  -->
+                        <div class="single-brands-item">
+                            <img class="img-fluid" src="assets/img/brands/brand4.png" alt="">
+                        </div>
+                        <!-- single brands item  -->
+                        <div class="single-brands-item">
+                            <img class="img-fluid" src="assets/img/brands/brand5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end brands area  -->
+
+    <!-- start about area   -->
+    <section class="about-area" id="about">
+        <img data-parallax='{"y" : -230}' class="about-shape" src="assets/img/about-shape.png" alt="">
+        <img data-parallax='{"x" : -230, "y" : -230}' class="comet1" src="assets/img/comet.png" alt="">
+        <img data-parallax='{"x" : -230, "y" : -230}' class="comet2" src="assets/img/comet2.png" alt="">
+        <div class="container">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-thumb">  
+                            <img data-parallax='{"y" : 70}' src="assets/img/thumb/about-thumb.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <img class="about-shape-line" src="assets/img/about-shape-line.png" alt="">
+                            <div class="section-title">
+                                <h2 data-aos="fade-down">About <span>Mycoinpool</span></h2>
+                                <p data-aos="fade-down" data-aos-delay="50">At mycoinpool, we're driven by a profound appreciation for developers and their remarkable contributions to the software realm. </p>
+                                <p data-aos="fade-down" data-aos-delay="100">Our journey began with a simple yet powerful realization: Developers invest boundless hours into crafting solutions that drive progress and spark transformation, yet their efforts are oftentimes overlooked and unaccounted for. </p>
+                                <a  data-aos="fade-down" data-aos-delay="150" href="#" class="primary-btn">REGISTER NOW <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about area   -->
+
+    <!-- start idos area  -->
+    <section class="idos-area" id="idos">
+        <img class="support-shape1 absolute" src="assets/img/support-circle-shape.png" alt="">
+        <img class="support-shape3 absolute" src="assets/img/support-circle-shape2.png" alt="">
+        <div class="container">
+            <div class="row" data-aos="fade-down">
+                <div class="col-lg-4">
+                    <div class="section-title">
+                        <h2>Upcoming <span>IDOs</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <ul class="nav nav-tabs text-end" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active bordered-btn" id="running-tab" data-bs-toggle="tab" data-bs-target="#running" type="button" role="tab" aria-controls="running" aria-selected="true">Running (6)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link bordered-btn" id="upcoming-tab" data-bs-toggle="tab" data-bs-target="#upcoming" type="button" role="tab" aria-controls="upcoming" aria-selected="false">Upcoming (124)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link bordered-btn" id="ended-tab" data-bs-toggle="tab" data-bs-target="#ended" type="button" role="tab" aria-controls="ended" aria-selected="false">Ended (124)</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-delay="50">
+                <div class="col-lg-12">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="running" role="tabpanel" aria-labelledby="running-tab">
+                            <div class="idos-slider-wrap idos-slider-trigger">
+                                <!-- single idos slider  -->
+                                <div class="single-idos-slider">
+                                    <div class="tag">Running</div>
+                                    <div class="idos-head">
+                                        <div class="profile-wrap">
+                                            <img class="idos-profile-avatar" src="assets/img/profile-avatar.png" alt="">
+                                            <div class="profile-content">
+                                                <h4>Take Metaverse</h4>
+                                                <a href="#">REGISTER</a>
+                                            </div>
+                                        </div>
+                                        <p class="head-desc">At mycoinpool, we're driven by a profound appreciation for developers and their remarkable contributions to the..</p>
+                                        <div class="solid-btns">
+                                            <span class="solid-btn">Opening in TBA</span>
+                                            <span class="solid-btn">USDT-BEP20</span>
+                                        </div>
+                                    </div>
+                                    <img class="line" src="assets/img/Line85.svg" alt="">
+                                    <div class="idos-info">
+                                        <div class="single-info">
+                                            <p>Swap rate</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">0.0075 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Hard Cap</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">30,00 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Access</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">Level</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="idos-social">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- single idos slider  -->
+                                <div class="single-idos-slider">
+                                    <div class="tag">Running</div>
+                                    <div class="idos-head">
+                                        <div class="profile-wrap">
+                                            <img class="idos-profile-avatar" src="assets/img/profile-avatar2.png" alt="">
+                                            <div class="profile-content">
+                                                <h4>Take Metaverse</h4>
+                                                <a href="#">REGISTER</a>
+                                            </div>
+                                        </div>
+                                        <p class="head-desc">At mycoinpool, we're driven by a profound appreciation for developers and their remarkable contributions to the..</p>
+                                        <div class="solid-btns">
+                                            <span class="solid-btn">Opening in TBA</span>
+                                            <span class="solid-btn">USDT-BEP20</span>
+                                        </div>
+                                    </div>
+                                    <img class="line" src="assets/img/Line85.svg" alt="">
+                                    <div class="idos-info">
+                                        <div class="single-info">
+                                            <p>Swap rate</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">0.0075 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Hard Cap</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">30,00 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Access</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">Level</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="idos-social">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- single idos slider  -->
+                                <div class="single-idos-slider">
+                                    <div class="tag">Running</div>
+                                    <div class="idos-head">
+                                        <div class="profile-wrap">
+                                            <img class="idos-profile-avatar" src="assets/img/profile-avatar3.png" alt="">
+                                            <div class="profile-content">
+                                                <h4>Take Metaverse</h4>
+                                                <a href="#">REGISTER</a>
+                                            </div>
+                                        </div>
+                                        <p class="head-desc">At mycoinpool, we're driven by a profound appreciation for developers and their remarkable contributions to the..</p>
+                                        <div class="solid-btns">
+                                            <span class="solid-btn">Opening in TBA</span>
+                                            <span class="solid-btn">USDT-BEP20</span>
+                                        </div>
+                                    </div>
+                                    <img class="line" src="assets/img/Line85.svg" alt="">
+                                    <div class="idos-info">
+                                        <div class="single-info">
+                                            <p>Swap rate</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">0.0075 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Hard Cap</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">30,00 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Access</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">Level</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="idos-social">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- single idos slider  -->
+                                <div class="single-idos-slider">
+                                    <div class="tag">Running</div>
+                                    <div class="idos-head">
+                                        <div class="profile-wrap">
+                                            <img class="idos-profile-avatar" src="assets/img/profile-avatar.png" alt="">
+                                            <div class="profile-content">
+                                                <h4>Take Metaverse</h4>
+                                                <a href="#">REGISTER</a>
+                                            </div>
+                                        </div>
+                                        <p class="head-desc">At mycoinpool, we're driven by a profound appreciation for developers and their remarkable contributions to the..</p>
+                                        <div class="solid-btns">
+                                            <span class="solid-btn">Opening in TBA</span>
+                                            <span class="solid-btn">USDT-BEP20</span>
+                                        </div>
+                                    </div>
+                                    <img class="line" src="assets/img/Line85.svg" alt="">
+                                    <div class="idos-info">
+                                        <div class="single-info">
+                                            <p>Swap rate</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">0.0075 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Hard Cap</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">30,00 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Access</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">Level</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="idos-social">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="idos-arrows-wrap">
+                                <div class="idos-dots"></div>
+                                <div class="line"></div>
+                                <div class="idos-arrows">
+                                    <span class="idos-prev slick-arrow"><i class="fas fa-arrow-left"></i></span>
+                                    <span class="idos-next slick-arrow"><i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="upcoming" role="tabpanel" aria-labelledby="upcoming-tab">
+                            <div class="idos-slider-wrap idos-slider-trigger2">
+                                <!-- single idos slider  -->
+                                <div class="single-idos-slider">
+                                    <div class="tag">Upcoming</div>
+                                    <div class="idos-head">
+                                        <div class="profile-wrap">
+                                            <img class="idos-profile-avatar" src="assets/img/profile-avatar.png" alt="">
+                                            <div class="profile-content">
+                                                <h4>Take Metaverse</h4>
+                                                <a href="#">REGISTER</a>
+                                            </div>
+                                        </div>
+                                        <p class="head-desc">At mycoinpool, we're driven by a profound appreciation for developers and their remarkable contributions to the..</p>
+                                        <div class="solid-btns">
+                                            <span class="solid-btn">Opening in TBA</span>
+                                            <span class="solid-btn">USDT-BEP20</span>
+                                        </div>
+                                    </div>
+                                    <img class="line" src="assets/img/Line85.svg" alt="">
+                                    <div class="idos-info">
+                                        <div class="single-info">
+                                            <p>Swap rate</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">0.0075 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Hard Cap</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">30,00 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Access</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">Level</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="idos-social">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- single idos slider  -->
+                                <div class="single-idos-slider">
+                                    <div class="tag">Upcoming</div>
+                                    <div class="idos-head">
+                                        <div class="profile-wrap">
+                                            <img class="idos-profile-avatar" src="assets/img/profile-avatar.png" alt="">
+                                            <div class="profile-content">
+                                                <h4>Take Metaverse</h4>
+                                                <a href="#">REGISTER</a>
+                                            </div>
+                                        </div>
+                                        <p class="head-desc">At mycoinpool, we're driven by a profound appreciation for developers and their remarkable contributions to the..</p>
+                                        <div class="solid-btns">
+                                            <span class="solid-btn">Opening in TBA</span>
+                                            <span class="solid-btn">USDT-BEP20</span>
+                                        </div>
+                                    </div>
+                                    <img class="line" src="assets/img/Line85.svg" alt="">
+                                    <div class="idos-info">
+                                        <div class="single-info">
+                                            <p>Swap rate</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">0.0075 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Hard Cap</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">30,00 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Access</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">Level</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="idos-social">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- single idos slider  -->
+                                <div class="single-idos-slider">
+                                    <div class="tag">Upcoming</div>
+                                    <div class="idos-head">
+                                        <div class="profile-wrap">
+                                            <img class="idos-profile-avatar" src="assets/img/profile-avatar.png" alt="">
+                                            <div class="profile-content">
+                                                <h4>Take Metaverse</h4>
+                                                <a href="#">REGISTER</a>
+                                            </div>
+                                        </div>
+                                        <p class="head-desc">At mycoinpool, we're driven by a profound appreciation for developers and their remarkable contributions to the..</p>
+                                        <div class="solid-btns">
+                                            <span class="solid-btn">Opening in TBA</span>
+                                            <span class="solid-btn">USDT-BEP20</span>
+                                        </div>
+                                    </div>
+                                    <img class="line" src="assets/img/Line85.svg" alt="">
+                                    <div class="idos-info">
+                                        <div class="single-info">
+                                            <p>Swap rate</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">0.0075 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Hard Cap</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">30,00 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Access</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">Level</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="idos-social">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- single idos slider  -->
+                                <div class="single-idos-slider">
+                                    <div class="tag">Upcoming</div>
+                                    <div class="idos-head">
+                                        <div class="profile-wrap">
+                                            <img class="idos-profile-avatar" src="assets/img/profile-avatar.png" alt="">
+                                            <div class="profile-content">
+                                                <h4>Take Metaverse</h4>
+                                                <a href="#">REGISTER</a>
+                                            </div>
+                                        </div>
+                                        <p class="head-desc">At mycoinpool, we're driven by a profound appreciation for developers and their remarkable contributions to the..</p>
+                                        <div class="solid-btns">
+                                            <span class="solid-btn">Opening in TBA</span>
+                                            <span class="solid-btn">USDT-BEP20</span>
+                                        </div>
+                                    </div>
+                                    <img class="line" src="assets/img/Line85.svg" alt="">
+                                    <div class="idos-info">
+                                        <div class="single-info">
+                                            <p>Swap rate</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">0.0075 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Hard Cap</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">30,00 USDT</span>
+                                            </div>
+                                        </div>
+                                        <div class="single-info">
+                                            <p>Access</p>
+                                            <img src="assets/img/long-long-arrow.svg" alt="">
+                                            <div>
+                                                <span class="solid-btn">Level</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="idos-social">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="idos-arrows-wrap">
+                                <div class="idos-dots2"></div>
+                                <div class="line"></div>
+                                <div class="idos-arrows">
+                                    <span class="idos-prev2 slick-arrow"><i class="fas fa-arrow-left"></i></span>
+                                    <span class="idos-next2 slick-arrow"><i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ended" role="tabpanel" aria-labelledby="ended-tab">Epmty Content</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end idos area  -->
+
+    <!-- start support area  -->
+    <section class="support-area">
+        <div class="stars-bg"></div>
+        <img class="support-shape2 absolute" src="assets/img/stars.png" alt="">
+        <img data-parallax='{"x" : 230, "y" : 230}' class="comet3" src="assets/img/comet3.png" alt="">
+        <img data-parallax='{"x" : 230, "y" : 230}' class="comet4" src="assets/img/comet4.png" alt="">
+        <div class="container">
+            <div class="row" data-aos="fade-down">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h2><span>Mycoinpool</span> <br>
+                            Provide Multichaine Support</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <img data-parallax='{"y" : 50}' class="img-fluid" src="assets/img/thumb/support-thumb.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end support area  -->
+
+    <!-- start roadmap area  -->
+    <section class="roadmap-area" id="roadmap">
+        <img class="roadmap-shape-left" src="assets/img/roadmap-shape-left.png" alt="">
+        <img data-parallax='{"y" : 230}' class="roadmap-shape-top-right" src="assets/img/roadmap-shape-top-right.png" alt="">
+        <img class="roadmap-shape-bottom-right" src="assets/img/roadmap-shape-bottom-right.png" alt="">
+        <img data-parallax='{"x" : 230, "y" : -230}' class="comet5" src="assets/img/comet5.png" alt="">
+        <img data-parallax='{"x" : 230, "y" : -230}' class="comet6" src="assets/img/comet6.png" alt="">
+        <img data-parallax='{"x" : 230, "y" : -230}' class="comet7" src="assets/img/comet7.png" alt="">
+        <img data-parallax='{"x" : 230, "y" : -230}' class="comet8" src="assets/img/comet7.png" alt="">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="fade-down">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h2>Mycoinpool <span>Roadmap</span></h2>
+                        <p>Due to the use of large computing power and artificial instantly analyze user data and offer solutions for their further use.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="timeline-wraper">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <div class="row">
+                                    <!-- single timeline  -->
+                                    <div class="row single-timeline-item step1">
+                                        <img class="arrow" src="assets/img/roadmap-arrow1.svg" alt="">
+                                        <div class="col-lg-6">
+                                            <div class="timeline-inner" data-aos="fade-up">
+                                                <div>
+                                                    <div class="single-timeline-head">
+                                                        <h3>August, 2023</h3>
+                                                    </div>
+                                                    <h4>Phase 1</h4>
+                                                    <ul>
+                                                        <li>Develop Algo algorithm and user interface</li>
+                                                        <li>Launch public sale of $ALGO tokens</li>
+                                                        <li>List $ALGO tokens on major cryptocurrency exchanges</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="circle-step"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single timeline  -->
+                                    <div class="row single-timeline-item right-item step2">
+                                        <img class="arrow" src="assets/img/roadmap-arrow2.svg" alt="">
+                                        <div class="col-lg-6 offset-lg-6">
+                                            <div class="timeline-inner" data-aos="fade-up">
+                                                <div class="circle-step"></div>
+                                                <div>
+                                                    <div class="single-timeline-head">
+                                                        <h3>July, 2023</h3>
+                                                    </div>
+                                                    <h4>Phase 2</h4>
+                                                    <ul>
+                                                        <li>Launch premium features for $ALGO token holders</li>
+                                                        <li>Develop advanced charting tools and real-time market data</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single timeline  -->
+                                    <div class="row single-timeline-item step3">
+                                        <img class="arrow" src="assets/img/roadmap-arrow1.svg" alt="">
+                                        <div class="col-lg-6">
+                                            <div class="timeline-inner" data-aos="fade-up">
+                                                <div>
+                                                    <div class="single-timeline-head">
+                                                        <h3>June, 2023</h3>
+                                                    </div>
+                                                    <h4>Phase 3</h4>
+                                                    <ul>
+                                                        <li>Expand and integrate Algo platform</li>
+                                                        <li>Develop new features and integrations</li>
+                                                        <li>Conduct ongoing testing and optimization</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="circle-step"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single timeline  -->
+                                    <div class="row single-timeline-item right-item step4">
+                                        <img class="arrow" src="assets/img/roadmap-arrow2.svg" alt="">
+                                        <div class="col-lg-6 offset-lg-6">
+                                            <div class="timeline-inner" data-aos="fade-up">
+                                                <div class="circle-step"></div>
+                                                <div>
+                                                    <div class="single-timeline-head">
+                                                        <h3>May, 2023</h3>
+                                                    </div>
+                                                    <h4>Phase 4</h4>
+                                                    <ul>
+                                                        <li>Finalize testing and optimization of Algo platform</li>
+                                                        <li>Release new updates and features as necessary</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end roadmap area  -->
+
+    <!-- start about area   -->
+    <section class="about-area" id="live">
+        <img data-parallax='{"y" : -150}' class="newsletter-shape" src="assets/img/newsletter-shape.png" alt="">
+        <div class="container">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 order-lg-2">
+                        <div class="about-thumb wow fadeIn">  
+                            <img src="assets/img/thumb/chart-thumb.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-1">
+                        <div class="about-content wow fadeIn delay-2">
+                            <img class="about-shape-line" src="assets/img/about-shape-line.png" alt="">
+                            <div class="section-title">
+                                <h2 data-aos="fade-down">Checkout Market Trade <span>Live Stream</span></h2>
+                                <p data-aos="fade-down" data-aos-delay="50">Monetizing your skills through sharing and contribution is a powerful way to not only showcase your expertise but also generate income. By actively participating in open-source projects, contributing to online communities. </p>
+                                <a data-aos="fade-down" data-aos-delay="100" href="#" class="primary-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about area   -->
+
+    <!-- start newsletter area  -->
+    <section class="newsletter-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-title text-center" data-aos="fade-down">
+                        <h2>Joining the Movement for 
+                            a <span>Better Tomorrow</span></h2>
+                        <p>Are you prepared to transform the way developers earn? Enter a realm where your creative potential aligns with.</p>
+                    </div>
+                    <form action="#" class="newsletter-form" data-aos="fade-down" data-aos-delay="50">
+                        <input type="text" name="" id="" placeholder="Enter your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end newsletter area  -->
+
+
+    <!-- start footer area  -->
+    <div class="footer-area">
+        <div class="container">
+            <div class="row footer-top">
+                <div class="col-xl-5 col-lg-5">
+                    <div class="footer-widget footer-about">
+                        <a href="index.html" class="logo">
+                            <img class="img-fluid" src="assets/img/logo.png" alt="">
+                        </a>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <h4>Follow us</h4>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                    <div class="row">
+                        <div class="col-md-4 col-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-title">Company</h4>
+                                <ul class="footer-menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Investments</a></li>
+                                    <li><a href="#">Referral</a></li>
+                                    <li><a href="#">Process</a></li>  
+                                    <li><a href="#">Contact Us</a></li>       
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-title">Quick Link</h4>
+                                <ul class="footer-menu">
+                                    <li><a href="#">Feature</a></li>
+                                    <li><a href="#">Security</a></li>
+                                    <li><a href="#">Customer Service</a></li>
+                                    <li><a href="#">Resource</a></li>
+                                    <li><a href="#">Roadmap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <div class="footer-widget">
+                                <h4 class="footer-title">Contact Info.</h4>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <strong>Customer Support:</strong> <br>
+                                        <a href="mailto:support@brunoex.com">support@brunoex.com</a>
+                                    </li>
+                                    <li>
+                                        <strong>Corporate Enquiries:</strong>
+                                        <a href="mailto:info@brunoex.com">info@brunoex.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom align-items-center">
+                <div class="col-lg-6">
+                    <p class="copyright">© 2023 <a href="#">mycoinpool</a> All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="footer-menu horizontal-menu">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer area  -->
+
+    <!-- All js here -->
+    <script src="assets/js/jquery-3.6.0-min.js "></script>
+    <script src="assets/js/jquery.sticky.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/jquery.parallax-scroll.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js "></script>
+
+</body>
+
+</html>

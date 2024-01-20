@@ -1,0 +1,289 @@
+/* Start Header area style
+============================================================================================ */
+.sticky-wrapper {
+    position: absolute;
+    width: 100%;
+    &.is-sticky {
+        .header-area {
+            padding: 0;
+            .container {
+                background: #262643;
+            }
+            .header-btn-wrap {
+                .header-btn {
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+.header-area {
+    position: absolute;
+    z-index: 999;
+    @include transition();
+    background: transparent;
+    width: 100%;
+    padding: 20px 0;
+    top: 0;
+    z-index: 9999;
+    .container {
+        background: rgba($color: white, $alpha: .15);
+        padding: 13px 20px;
+        border-radius: 1000px;   
+    }
+    .navbar-brand {
+        margin-bottom: 0;
+        margin-right: 60px;
+        img {
+            @include transition();
+        }
+    }
+    &.active {
+        box-shadow: 0 5px 10px #dddddd1a;
+    }
+    .navbar {
+        background: transparent;
+        padding: 0px;
+        border: 0px;
+        border-radius: 0px;
+        .navbar-brand {
+            display: block;
+            @include transition();
+        }
+        .navbar-nav {
+            .nav-item {
+                margin-right: 35px;
+                a {
+                    font-size: 15px;
+                    color: #A09FB0;
+                    padding: 0px;
+                    font-weight: 500;
+                    @include transition();
+                    text-transform: capitalize;
+                    font-family: $title-font;
+                }
+            }
+            .nav-item:hover>a, .nav-item a.active {
+                color: $white;
+            }
+        }
+        .header-btn-wrap {
+            .header-btn {
+                position: relative;
+                border: 2px solid transparent;
+                background: #292C34;
+                background-clip: padding-box;
+                font-size: 15px;
+                font-family: $title-font;
+                color: $white;
+                display: inline-flex;
+                align-items: center;
+                gap: 15px;
+                padding: 8px 15px;
+                border-radius: 1000px;
+                transition: .3s;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    bottom: -2px;
+                    left: -2px;
+                    right: -2px;
+                    background: linear-gradient(to right, $primary-color, $primary-color2);
+                    z-index: -1;
+                    border-radius: 1000px;
+                    transition: .3s;
+                }
+                &:hover {
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.custom-modal {
+    z-index: 9999;
+    &.createAccount {
+        .modal-content {
+            .form-group {
+                .text-desc {
+                    position: relative;
+                    color: #A0A5D7;
+                    font-size: 16px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 0 10px;
+                    input {
+                        height: auto;
+                        width: auto;
+                        accent-color: #A0A5D7;
+                    }
+                    a {
+                        background: linear-gradient(to right, $primary-color, $primary-color2);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+
+        }
+    }
+    .modal-content {
+        background-color: #14172F;
+        border: 1px solid $primary-color;
+        padding: 40px;
+        border-radius: 30px;
+        .btn-close {
+            position: absolute;
+            background: transparent;
+            height: 29px;
+            width: 29px;
+            padding: 0;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 22px;
+            top: 22px;
+            border: 2px solid #878997;
+            i {
+                color: #878997;
+            }
+        }
+        .modal-body {
+            padding: 0;
+        }
+        .modal-form-head {
+            text-align: center;
+            margin-bottom: 40px;
+            .logo {
+                display: block;
+                margin-bottom: 15px;
+            }
+            h3 {
+                font-size: 36px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 18px;
+                button {
+                    color: #2AF6FF;
+                    background: transparent;
+                    padding: 0;
+                    border: none;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .form-group {
+            margin-bottom: 20px;
+            label {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            input {
+                background: #1E213B;
+                border: 1px solid #383B5A;
+                padding: 0 15px;
+                height: 60px;
+                border-radius: 8px;
+                color: #A0A5D7;
+                font-size: 16px;
+                &::placeholder {
+                    color: #A0A5D7;
+                }
+            }
+        }
+        .forgot-wrap {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 35px;
+            p {
+                font-size: 16px;
+                margin-bottom: 0;
+                color: #A0A5D7;
+            }
+            .remember {
+                position: relative;
+                color: #A0A5D7;
+                font-size: 16px;
+                input {
+                    height: auto;
+                    width: auto;
+                    accent-color: #A0A5D7;
+                }
+            }
+        }
+        .btn-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+            button {
+                transition: .3s;
+            }
+            .primary-btn {
+                width: 100%;
+            }
+            .or-wrap {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                span {
+                    display: block;
+                    height: 1px;
+                    width: 100%;
+                    background: #A0A5D7;
+                }
+                p {
+                    margin-bottom: 0;
+                    color: #A0A5D7;
+                }
+            }
+            .google-btn {
+                background: #1E213B;
+                border: 1px solid #383B5A;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                padding: 14px 30px;
+                border-radius: 1000px;
+                color: $white;
+                font-size: 19px;
+                font-weight: 500;
+                &:hover {
+                    transform: scale(1.05);
+                    color: $white;
+                }
+            }
+        }
+        .create-account {
+            margin-bottom: 30px;
+            p {
+                text-align: center;
+                color: $white;
+                button {
+                    color: #2AF6FF;
+                    background: transparent;
+                    padding: 0;
+                    border: none;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .idos-social {
+            justify-content: center;
+        }
+    }
+}

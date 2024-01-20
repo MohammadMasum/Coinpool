@@ -1,0 +1,16 @@
+/* breadcrumb area style
+============================================================================================ */
+.breadcrumb-area {
+    background: url(../img/bg/breadcrumb-bg.png) center no-repeat;
+    background-size: cover;
+    padding: 200px 0 110px;
+    position: relative;
+    z-index: 1;
+    .breadcrumb-content {
+        h1 {
+            font-size: 48px;
+            color: $white;
+            font-weight: 700;
+        }
+    }
+}

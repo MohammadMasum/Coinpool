@@ -1,0 +1,115 @@
+/* Start Header area style
+============================================================================================ */
+.sidebar {
+  height: 100vh;
+  background: url(../img/bg/sidebar-bg.png) center no-repeat;
+  width: 216px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  @include transition(.3s);
+  transition: .5s;
+  border-radius: 15px;
+  overflow: hidden scroll;
+  padding-bottom: 100px;
+  margin-left: 30px;
+  margin-top: 30px;
+  .fa-times {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 99999;
+    display: none;
+  }
+  .logo-wrap {
+    padding: 30px 15px 70px;
+    text-align: center;
+    .mobile-logo {
+      display: none;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb  {
+    background-color: transparent;
+  }
+}
+
+.sidebar-menu-wrap {
+  padding-left: 15px;
+  .navigation {
+    li {
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        min-height: 46px;
+        width: auto;
+        padding: 5px 10px;
+        @include transition();
+        justify-content: flex-start;
+        font-family: $title-font;
+        &:before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          content: "";
+          border-radius: 10px 0px 0px 10px;
+          background: linear-gradient(90deg, #182931 1.91%, rgba(24, 41, 49, 0.00) 102.81%);
+          opacity: 0;
+          visibility: hidden;
+          z-index: -1;
+          @include transition();
+        }
+        .menu-icon {
+          min-width: 17px;
+          margin-right: 10px;
+          img {
+            @include transition();
+            @include filter(brightness(8) invert(0.2));
+          }
+        }
+        .menu-text {
+          display: block;
+          color: #BFC6D2;
+          transition: .3s;
+        }
+        &:hover, &.active {
+          &:before {
+            opacity: 1;
+            visibility: visible;
+          }
+          .menu-icon {
+            img {
+              @include filter(brightness(1) invert(0));
+            }
+          }
+          .menu-text {
+              color: white;
+          }
+        }
+      }
+    }
+  } 
+  .menu-title {
+    font-size: 12px;
+    color: white;
+    padding-left: 15px;
+  }
+}
+
+
+
