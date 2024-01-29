@@ -32,7 +32,7 @@
     <header class="header-area" id="header_area">
         <nav class="navbar navbar-expand-xl">
             <div class="container">
-                <a class="navbar-brand " href="index.html "><img src="assets/img/logo.png" alt=" "></a>
+                <a class="navbar-brand " href="index.html "><img src="assets/img/logo.svg" alt=" "></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -173,7 +173,12 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Select Country</label>
-                                    <input type="text" placeholder="Select Country">
+                                    <select name="country" id="country">
+                                        <option>Select Country</option>
+                                        <option>Bangladesh</option>
+                                        <option>Madagascar</option>
+                                        <option>Afghanistan</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -185,7 +190,12 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Select Security Question</label>
-                                    <input type="tel" placeholder="Select Security Question">
+                                    <select name="question" id="question">
+                                        <option>Select Security Question</option>
+                                        <option>Question 1</option>
+                                        <option>Question 2</option>
+                                        <option>Question 3</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -196,12 +206,12 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <label class="text-desc" for="text-desc"><input type="checkbox" name="text-desc" id="confirm"> I Agreed, the <a href="#">Terms & conditions</a> and <a href="#">Privacy Policy</a></label>
+                                    <label class="text-desc" for="confirm"><input type="checkbox" name="text-desc" id="confirm"> I Agreed, the <a href="#">Terms & conditions</a> and <a href="#">Privacy Policy</a></label>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="btn-wrap">
-                                    <button type="submit" class="primary-btn">Join Now on Mycoinpoll <i class="fas fa-arrow-right"></i></button>
+                                    <button type="submit" class="primary-btn">Register Now <i class="fas fa-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>

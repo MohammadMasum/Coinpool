@@ -200,6 +200,26 @@
                     color: #A0A5D7;
                 }
             }
+            select {
+                background: #1E213B;
+                border: 1px solid #383B5A;
+                padding: 0 15px;
+                height: 60px;
+                border-radius: 8px;
+                color: #A0A5D7;
+                font-size: 16px;
+                width: 100%;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-image: url("../img/icons/angle-down.svg");
+                background-repeat: no-repeat;
+                background-position-x: calc(100% - 15px);
+                background-position-y: 50%;
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
         }
         .forgot-wrap {
             margin-bottom: 20px;
@@ -233,6 +253,17 @@
             }
             .primary-btn {
                 width: 100%;
+                i {
+                    height: 30px;
+                    width: 30px;
+                    background: white;
+                    border-radius: 50%;
+                    color: #2F56FF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 11px;
+                }
             }
             .or-wrap {
                 display: flex;

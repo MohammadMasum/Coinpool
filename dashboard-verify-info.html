@@ -16,10 +16,12 @@
     <meta charset="UTF-8">
     <!-- Site Title -->
     <title>Mycoinpool</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -27,9 +29,9 @@
 <body class="dashboard-body">
     <div class="main-dashboard">
         <div class="sidebar">
+            <i class="fas fa-times"></i>
             <div class="logo-wrap">
-                <img class="desktop-logo" src="assets/img/logo.png" alt="">
-                <img class="mobile-logo" src="assets/img/fav.png" alt="">
+                <img class="desktop-logo" src="assets/img/logo.svg" alt="">
             </div>
             <div class="sidebar-menu-wrap">
                 <ul class="navigation mb-4">
@@ -66,7 +68,14 @@
                 <div class="row align-items-center">
                     <div class="col-xl-7 col-md-6">
                         <div class="header-bar-left">
-                            <h4>Dashboard</h4>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="menu-collapse-trigger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <h4>Dashboard</h4>
+                            </div>
                             <div class="serch-bar-side">
                                 <div class="form-group search">
                                     <input type="search" name="" id="" placeholder="Search here...">
@@ -153,12 +162,12 @@
 
     <!-- All js here -->
     <script src="assets/js/jquery-3.6.0-min.js "></script>
+    <script src="assets/js/jquery.sticky.js "></script>
     <script src="assets/js/bootstrap.min.js "></script>
-    <script src="assets/js/slick.js "></script>
-    <script src="assets/js/amcharts-core.js"></script>
-    <script src="assets/js/amcharts-charts.js"></script>
-    <script src="assets/js/amcharts-material.js"></script>
-    <script src="assets/js/amcharts-animated.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/jquery.parallax-scroll.js"></script>
     <!-- custom js -->
     <script src="assets/js/main.js "></script>
 

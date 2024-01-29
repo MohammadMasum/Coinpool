@@ -2,6 +2,8 @@
 ============================================================================================ */
 .footer-area {
     padding: 120px 0 35px;
+    position: relative;
+    z-index: 1;
     .footer-top {
         padding-bottom: 120px;
         .footer-widget {

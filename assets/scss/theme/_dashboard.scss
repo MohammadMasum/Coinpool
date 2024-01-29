@@ -140,7 +140,7 @@
         
         .account-details {
             position: relative;
-            z-index: 1;
+            z-index: 2;
             .display-picture{
                 margin-left: auto;
                 img {
@@ -162,7 +162,7 @@
                     display: flex;
                     align-items: flex-start;
                     flex-direction: column;
-                    background: #75D0E5;
+                    background: linear-gradient(177.23deg, #2361FF -0.62%, #03A98B 99.87%);
                     position: absolute;
                     top: 0;
                     right:0;

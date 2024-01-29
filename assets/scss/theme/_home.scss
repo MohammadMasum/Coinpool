@@ -568,6 +568,8 @@
     .newsletter-form {
         display: flex;
         gap: 20px;
+        position: relative;
+        z-index: 2;
         input {
             background: transparent;
             border-radius: 1000px;
