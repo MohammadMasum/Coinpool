@@ -18,10 +18,6 @@
 
 
         $(".menu-collapse-trigger").click(function() {
-            $(".sidebar, .main-content").toggleClass('collapsed');
-        });
-
-        $(".mobile-menu-trigger").click(function() {
             $(".sidebar").addClass('active');
         });
 

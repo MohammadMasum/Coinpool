@@ -369,80 +369,16 @@
         justify-content: flex-start;
     }
     .sidebar {
-        width: 75px;
         border-radius: 0 15px 15px 0;
         margin-left: 0;
         margin-top: 0;
-        padding: 0 10px 30px;
-    }
-    .sidebar .logo-wrap .desktop-logo {
-        display: none;
-    }
-    .sidebar .logo-wrap .mobile-logo {
-        display: block;
-        margin: 0 auto;
+        left: -216px;
     }
     .sidebar .logo-wrap {
         padding: 30px 0 40px;
     }
-    .sidebar-menu-wrap .navigation li a .menu-text {
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        margin-top: -31px;
-        left: 65px;
-        background: linear-gradient(90deg, #22A1CC 1.91%, #2589E7 102.81%);
-        clip-path: polygon(10% 0, 100% 0, 100% 99%, 10% 100%, 0 50%);
-        padding: 2px 10px;
-        font-size: 12px;
-        color: white;
-        padding-left: 15px;
-        border-radius: 0 2px 2px 0;
-        display: none;
-    }
-    .sidebar-menu-wrap {
-        padding: 0;
-    }
-    .sidebar-menu-wrap .navigation li a:before {
-       display: none;
-    }
-    .sidebar-menu-wrap .navigation li a .menu-icon {
-        min-width: 40px;
-        margin-right: 0;
-        height: 40px;
-        width: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
-    .sidebar-menu-wrap .navigation li a:hover .menu-icon, .sidebar-menu-wrap .navigation li a.active .menu-icon {
-        background: #081923;
-        border-radius: 5px;
-    }
-    .sidebar-menu-wrap .navigation li a {
-        display: block;
-        min-height: auto;
-        width: auto;
-        padding: 0;
-    }
-    .sidebar-menu-wrap .menu-title {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    /* .sidebar-menu-wrap .navigation li a:hover .menu-text, .sidebar-menu-wrap .navigation li a.active .menu-text {
-        left: 58px;
-        opacity: 1;
-        visibility: visible;
-    } */
-    .sidebar-menu-wrap .navigation {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
     .main-content {
-        width: calc(100% - 75px);
+        width: 100%;
         padding: 15px;
     }
     .main-dashboard {
@@ -456,6 +392,15 @@
     }
     .coming-soon {
         padding: 80px 20px;
+    }
+    .header-bar .header-bar-left .menu-collapse-trigger {
+        display: flex;
+    }
+    .sidebar.active {
+        left: 0;
+    }
+    .sidebar .fa-times {
+        display: flex;
     }
 }
 
