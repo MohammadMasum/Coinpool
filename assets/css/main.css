@@ -434,7 +434,8 @@ img {
   .header-area .container {
     background: rgba(255, 255, 255, 0.15);
     padding: 13px 20px;
-    border-radius: 1000px; }
+    border-radius: 1000px;
+    transition: .3s; }
   .header-area .navbar-brand {
     margin-bottom: 0;
     margin-right: 60px; }
@@ -1311,7 +1312,9 @@ img {
 /* Start header bar style
 ============================================================================================ */
 .header-bar {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2; }
   .header-bar .header-bar-left {
     display: flex;
     align-items: center;
@@ -1397,6 +1400,12 @@ img {
         transition: .3s; }
       .header-bar .header-bar-right .header-btn:hover {
         background: transparent; }
+    .header-bar .header-bar-right .notification-wrap {
+      position: relative;
+      z-index: 1; }
+      .header-bar .header-bar-right .notification-wrap .card p {
+        font-size: 12px;
+        margin-bottom: 0; }
     .header-bar .header-bar-right .notification {
       width: 50px;
       aspect-ratio: 1;
@@ -1421,40 +1430,43 @@ img {
     .header-bar .header-bar-right .account-details {
       position: relative;
       z-index: 2; }
-      .header-bar .header-bar-right .account-details .display-picture {
-        margin-left: auto; }
-        .header-bar .header-bar-right .account-details .display-picture img {
-          width: 50px;
-          border-radius: 50%; }
-      .header-bar .header-bar-right .account-details .display-picture
-      .display-picture
-      .card {
-        transition: 0.5s ease; }
-      .header-bar .header-bar-right .account-details .card {
-        border: none; }
-        .header-bar .header-bar-right .account-details .card.hidden {
-          display: none; }
-        .header-bar .header-bar-right .account-details .card ul {
-          display: flex;
-          align-items: flex-start;
-          flex-direction: column;
-          background: linear-gradient(177.23deg, #2361FF -0.62%, #03A98B 99.87%);
-          position: absolute;
-          top: 0;
-          right: 0;
-          border-radius: 10px;
-          padding: 10px 50px 10px 20px; }
-          .header-bar .header-bar-right .account-details .card ul li {
-            padding: 5px 0;
+    .header-bar .header-bar-right .display-picture {
+      margin-left: auto; }
+      .header-bar .header-bar-right .display-picture img {
+        width: 50px;
+        border-radius: 50%; }
+    .header-bar .header-bar-right .display-picture
+    .display-picture
+    .card {
+      transition: 0.5s ease; }
+    .header-bar .header-bar-right .card {
+      border: none;
+      min-width: 160px;
+      position: absolute;
+      top: calc(100% + 10px);
+      right: 0;
+      background: linear-gradient(177.23deg, #2361FF -0.62%, #03A98B 99.87%);
+      padding: 10px 20px; }
+      .header-bar .header-bar-right .card.hidden {
+        display: none; }
+      .header-bar .header-bar-right .card ul {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        border-radius: 10px; }
+        .header-bar .header-bar-right .card ul li {
+          padding: 5px 0;
+          color: #fff;
+          font-size: 14px;
+          font-family: "Sharp Grotesk Medium 20", sans-serif; }
+          .header-bar .header-bar-right .card ul li a {
+            text-decoration: none;
             color: #fff;
-            font-size: 14px;
-            font-family: "Sharp Grotesk Medium 20", sans-serif; }
-            .header-bar .header-bar-right .account-details .card ul li a {
-              text-decoration: none;
-              color: #fff;
-              transition: .3s; }
-              .header-bar .header-bar-right .account-details .card ul li a:hover {
-                opacity: .8; }
+            transition: .3s; }
+            .header-bar .header-bar-right .card ul li a:hover {
+              opacity: .8; }
 
 /* Start db banner style
 ============================================================================================ */
@@ -2260,11 +2272,14 @@ img {
     margin-bottom: 0; }
   .presell-btn-wrap .bordered-btn {
     font-size: 14px;
-    padding: 11px 25px;
+    padding: 16px 25px;
     background: #14363E;
-    background-clip: padding-box; }
+    background-clip: padding-box;
+    line-height: 1; }
     .presell-btn-wrap .bordered-btn:before {
       background: linear-gradient(to right, #178A9E, #22409E); }
+    .presell-btn-wrap .bordered-btn:hover {
+      background: transparent; }
 
 .single-presell-box {
   border-radius: 15px;
@@ -2408,34 +2423,35 @@ img {
   background: #141E33;
   padding: 26px;
   border-radius: 20.929px;
-  border: 1.744px solid rgba(255, 255, 255, 0.1); }
-  .single-presell-pricing-item.active {
+  border: 1.744px solid rgba(255, 255, 255, 0.1);
+  transition: .3s; }
+  .single-presell-pricing-item.active, .single-presell-pricing-item:hover {
     background: #0D2A3E;
     background-clip: padding-box;
     filter: drop-shadow(0px 4px 41px rgba(28, 214, 145, 0.17));
     border: 1px solid #1DD197; }
-    .single-presell-pricing-item.active .pricing-head {
+    .single-presell-pricing-item.active .pricing-head, .single-presell-pricing-item:hover .pricing-head {
       padding-bottom: 20px;
       margin-bottom: 20px;
       border-bottom: 1px solid #ffffff38; }
-      .single-presell-pricing-item.active .pricing-head .icon-box .icon {
+      .single-presell-pricing-item.active .pricing-head .icon-box .icon, .single-presell-pricing-item:hover .pricing-head .icon-box .icon {
         border: 0.872px solid #FFFFFF;
         background: #FFFFFF; }
-      .single-presell-pricing-item.active .pricing-head .short-desc {
+      .single-presell-pricing-item.active .pricing-head .short-desc, .single-presell-pricing-item:hover .pricing-head .short-desc {
         color: #fff; }
-    .single-presell-pricing-item.active .pricing-body ul li {
+    .single-presell-pricing-item.active .pricing-body ul li, .single-presell-pricing-item:hover .pricing-body ul li {
       position: relative;
       font-size: 15px;
       color: #fff;
       padding-left: 30px; }
-      .single-presell-pricing-item.active .pricing-body ul li:not(:last-child) {
+      .single-presell-pricing-item.active .pricing-body ul li:not(:last-child), .single-presell-pricing-item:hover .pricing-body ul li:not(:last-child) {
         margin-bottom: 15px; }
-      .single-presell-pricing-item.active .pricing-body ul li i {
+      .single-presell-pricing-item.active .pricing-body ul li i, .single-presell-pricing-item:hover .pricing-body ul li i {
         background: linear-gradient(to right, #1CD592, #2683ED);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-color: #fff; }
-    .single-presell-pricing-item.active .pricing-body .bordered-btn {
+    .single-presell-pricing-item.active .pricing-body .bordered-btn, .single-presell-pricing-item:hover .pricing-body .bordered-btn {
       background: transparent; }
   .single-presell-pricing-item .pricing-head {
     padding-bottom: 20px;
@@ -2455,7 +2471,8 @@ img {
         min-width: 60px;
         display: flex;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        transition: .3s; }
       .single-presell-pricing-item .pricing-head .icon-box .content h5 {
         font-family: "Sharp Grotesk Medium 20", sans-serif;
         font-size: 20px;
@@ -2613,6 +2630,164 @@ img {
           background: transparent;
           width: 100%;
           padding: 0; }
+
+/* Start air drop style
+============================================================================================ */
+.get-coin-wrap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #2F87A5 0%, #052F3E 79.62%);
+  box-shadow: 0px 4px 24px 0px rgba(255, 253, 253, 0.15) inset;
+  height: 100%; }
+  .get-coin-wrap .inner-content {
+    max-width: 350px; }
+    .get-coin-wrap .inner-content h3 {
+      font-family: "Sharp Grotesk SemiBold 20";
+      text-transform: uppercase;
+      font-size: 32px; }
+      .get-coin-wrap .inner-content h3 span {
+        color: #42E8E0; }
+    .get-coin-wrap .inner-content p {
+      font-size: 20px;
+      margin-bottom: 20px; }
+  .get-coin-wrap .rating-thumb {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    z-index: -1; }
+  .get-coin-wrap .flash-boom {
+    position: absolute;
+    right: 25%;
+    z-index: -1;
+    top: 10%; }
+  .get-coin-wrap .flash-boom-blur {
+    position: absolute;
+    right: 27%;
+    z-index: -1;
+    bottom: 0; }
+
+.upload-wrap {
+  border-radius: 15px;
+  background: #17243E;
+  box-shadow: 4px 4px 4px 0px rgba(31, 46, 77, 0.62) inset;
+  padding: 20px;
+  padding-bottom: 35px;
+  height: 100%; }
+  .upload-wrap h5 {
+    font-size: 18px;
+    font-family: #101011;
+    margin-bottom: 20px; }
+  .upload-wrap .dragBox {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: #BFC6D2;
+    border: 1px dashed #ffffff26;
+    display: inline-block;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    background: #ffffff0a;
+    padding: 35px 15px; }
+    .upload-wrap .dragBox img {
+      margin-bottom: 15px; }
+    .upload-wrap .dragBox p {
+      margin-bottom: 0;
+      font-size: 12px; }
+    .upload-wrap .dragBox input[type="file"] {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      top: 0;
+      left: 0; }
+  .upload-wrap .primary-btn {
+    cursor: pointer; }
+    .upload-wrap .primary-btn:hover {
+      transform: scale(1.01); }
+  .upload-wrap .draging {
+    transform: scale(1.1); }
+  .upload-wrap #preview {
+    text-align: center; }
+    .upload-wrap #preview img {
+      max-width: 100%; }
+
+.share-area {
+  border-radius: 15px;
+  background: #17243E;
+  box-shadow: 4px 4px 4px 0px rgba(31, 46, 77, 0.62) inset;
+  padding: 20px;
+  position: relative;
+  z-index: 1; }
+  .share-area .share-note {
+    position: relative;
+    z-index: 1;
+    padding-left: 42px;
+    font-size: 15px;
+    color: #FF9494; }
+    .share-area .share-note img {
+      position: absolute;
+      left: 0;
+      top: -4px; }
+    .share-area .share-note span {
+      font-family: "Sharp Grotesk Medium 20", sans-serif; }
+  .share-area .single-share-box {
+    padding: 15px;
+    background: #ffffff0a;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    transition: .3s;
+    position: relative;
+    z-index: 1; }
+    .share-area .single-share-box:not(:last-child) {
+      margin-bottom: 10px; }
+    .share-area .single-share-box .share-box-left {
+      display: flex;
+      align-items: center;
+      gap: 10px; }
+      .share-area .single-share-box .share-box-left .count {
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid rgba(66, 232, 224, 0.14);
+        background: rgba(222, 255, 253, 0.08); }
+      .share-area .single-share-box .share-box-left p {
+        margin-bottom: 0;
+        font-size: 15px; }
+        .share-area .single-share-box .share-box-left p a {
+          text-decoration: underline;
+          color: #fff; }
+    .share-area .single-share-box .share-box-btn {
+      min-width: 120px; }
+      .share-area .single-share-box .share-box-btn .bordered-btn {
+        background: #1C4D59;
+        background-clip: padding-box;
+        font-size: 14px;
+        line-height: 1;
+        padding: 11px 17px;
+        justify-content: center; }
+        .share-area .single-share-box .share-box-btn .bordered-btn:hover {
+          background: transparent; }
+    .share-area .single-share-box:hover {
+      border: 1px solid #1A5B65;
+      background: #173245; }
+      .share-area .single-share-box:hover .share-box-btn .bordered-btn {
+        background: transparent;
+        font-size: 14px;
+        line-height: 1;
+        padding: 11px 17px; }
 
 /* Start Header area style
 ============================================================================================ */

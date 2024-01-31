@@ -117,6 +117,21 @@
             })
         });
 
+        function dragNdrop(event) {
+            var fileName = URL.createObjectURL(event.target.files[0]);
+            var preview = document.getElementById("preview");
+            var previewImg = document.createElement("img");
+            previewImg.setAttribute("src", fileName);
+            preview.innerHTML = "";
+            preview.appendChild(previewImg);
+        }
+        function drag() {
+            document.getElementById('uploadFile').parentNode.className = 'draging dragBox';
+        }
+        function drop() {
+            document.getElementById('uploadFile').parentNode.className = 'dragBox';
+        }
+
     });
 }(jQuery));
 
@@ -146,8 +161,8 @@ function updateTimer() {
         .innerHTML =
         '<div class="days">' + wrapDigits(d) + '<div class="label">days</div></div>' +
         '<div class="hours">' + wrapDigits(h) + '<div class="label">hours</div></div>' +
-        '<div class="mins">' + wrapDigits(m) + '<div class="label">minutes</div></div>';
-        // '<div class="sec">' + wrapDigits(s) + '<span>seconds</span></div>';
+        '<div class="mins">' + wrapDigits(m) + '<div class="label">minutes</div></div>'+
+        '<div class="sec">' + wrapDigits(s) + '<div class="label">seconds</div></div>';
 }
 
 function wrapDigits(number) {
@@ -192,11 +207,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-let card = document.querySelector(".card"); //declearing profile card element
-let displayPicture = document.querySelector(".display-picture"); //declearing profile picture
+let card_trigger1 = document.querySelector(".card-trigger1"); //declearing profile card element
+let card_selector1 = document.querySelector(".card-selector1"); //declearing profile picture
 
-displayPicture.addEventListener("click", function() { //on click on profile picture toggle hidden class from css
-card.classList.toggle("hidden")})
+card_selector1.addEventListener("click", function() { //on click on profile picture toggle hidden class from css
+card_trigger1.classList.toggle("hidden")})
+
+
+
+let card_trigger2 = document.querySelector(".card-trigger2"); //declearing profile card element
+let card_selector2 = document.querySelector(".card-selector2"); //declearing profile picture
+
+card_selector2.addEventListener("click", function() { //on click on profile picture toggle hidden class from css
+card_trigger2.classList.toggle("hidden")})
+
+
+
 
 
 // copy clipboard
@@ -291,3 +317,19 @@ document.getElementById('randomizeData').addEventListener('click', function() {
 
     window.myLine.update();
 });
+
+
+function dragNdrop(event) {
+    var fileName = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("preview");
+    var previewImg = document.createElement("img");
+    previewImg.setAttribute("src", fileName);
+    preview.innerHTML = "";
+    preview.appendChild(previewImg);
+}
+function drag() {
+    document.getElementById('uploadFile').parentNode.className = 'draging dragBox';
+}
+function drop() {
+    document.getElementById('uploadFile').parentNode.className = 'dragBox';
+}

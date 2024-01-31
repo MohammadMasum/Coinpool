@@ -15,7 +15,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Mycoinpool-2fa-management</title>
+    <title>Mycoinpool-air-drop</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -38,7 +38,7 @@
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/dashboard.svg" alt=""></span> <span class="menu-text">Dashboard</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/presell.svg" alt=""></span> <span class="menu-text">Presell</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/ico.svg" alt=""></span> <span class="menu-text">ICO</span></a></li>
-                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/air-drop.svg" alt=""></span> <span class="menu-text">Air Drop</span></a></li>
+                    <li><a class="active" href="#"><span class="menu-icon"><img src="assets/img/icons/air-drop.svg" alt=""></span> <span class="menu-text">Air Drop</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/gift.svg" alt=""></span> <span class="menu-text">Gifts</span></a></li>
                 </ul>
                 <p class="menu-title mb-4">Manage User</p>
@@ -57,7 +57,7 @@
                 <ul class="navigation">
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/update-profile.svg" alt=""></span> <span class="menu-text">Update Profile</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/update-password.svg" alt=""></span> <span class="menu-text">Update Password</span></a></li>
-                    <li><a class="active" href="#"><span class="menu-icon"><img src="assets/img/icons/manage-2fa.png" alt=""></span> <span class="menu-text">Manage 2FA</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/manage-2fa.png" alt=""></span> <span class="menu-text">Manage 2FA</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/logout.svg" alt=""></span> <span class="menu-text">Log Out</span></a></li>
                 </ul>
             </div>
@@ -74,7 +74,7 @@
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <h4>2FA Management</h4>
+                                <h4>Air Drop</h4>
                             </div>
                             <div class="serch-bar-side">
                                 <div class="form-group search">
@@ -112,12 +112,102 @@
                     </div>
                 </div>
             </section>
-            <!-- start verify info area  -->
-            <section class="verify-info-area">
-                <img class="small-circle" src="assets/img/small-circle.png" alt="">
-                <h5 class="mb-4">2FA Management</h5>
-                <a href="#" class="primary-btn">Click here to enable 2FA <i class="fas fa-arrow-right"></i></a>
+            
+            <!-- start air drop area  -->
+            <section class="air-drop-area">
+                <div class="row gy-4 mb-5">
+                    <div class="col-lg-6">
+                        <div class="get-coin-wrap">
+                            <div class="inner-content">
+                                <h3>Get <span>678</span> Coin</h3>
+                                <p>Follow Our Social Media and get more Point</p>
+                                <ul class="idos-social">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                            <img class="flash-boom" src="assets/img/flash-boom.svg" alt="">
+                            <img class="flash-boom-blur" src="assets/img/flash-boom-blur.svg" alt="">
+                            <img class="rating-thumb" src="assets/img/rating-thumb.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="upload-wrap">
+                            <h5>Upload Your Daily Proof</h5>
+                            <div class="uploadOuter">
+                                <div class="dragBox">
+                                    <img src="assets/img/icons/upload.svg" alt="">
+                                    <p>Drag or drop your screenshot here</p>
+                                    <input type="file" onChange="dragNdrop(event)"  ondragover="drag()" ondrop="drop()" id="uploadFile"  />
+                                </div>
+                                <div class="mt-4">
+                                    <label for="uploadFile" class="primary-btn w-100">Upload Image</label>
+                                </div>
+                            </div>
+                            <div class="mt-3" id="preview"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
+            <!-- end air drop area  -->
+
+            <!-- start share area  -->
+            <section class="share-area">
+                <p class="share-note"><img src="assets/img/icons/edit.svg" alt=""> <span>Important Note- </span>You have to like and share our every post and take a screenshot one by one then upload them here!</p>
+                <!-- single share box  -->
+                <div class="single-share-box">
+                    <div class="share-box-left">
+                        <span class="count">1</span>
+                        <p>Facebook- <a href="#">Note Design Assets – all-assets/note?gclid=Cj0KCQiAm4WsBhCiARIsAEJI...</a></p>
+                    </div>
+                    <div class="share-box-btn">
+                        <a href="#" class="bordered-btn">Share Now</a>
+                    </div>
+                </div>
+                <!-- single share box  -->
+                <div class="single-share-box">
+                    <div class="share-box-left">
+                        <span class="count">2</span>
+                        <p>Facebook- <a href="#">Note Design Assets – all-assets/note?gclid=Cj0KCQiAm4WsBhCiARIsAEJI...</a></p>
+                    </div>
+                    <div class="share-box-btn">
+                        <a href="#" class="bordered-btn">Share Now</a>
+                    </div>
+                </div>
+                <!-- single share box  -->
+                <div class="single-share-box">
+                    <div class="share-box-left">
+                        <span class="count">3</span>
+                        <p>Facebook- <a href="#">Note Design Assets – all-assets/note?gclid=Cj0KCQiAm4WsBhCiARIsAEJI...</a></p>
+                    </div>
+                    <div class="share-box-btn">
+                        <a href="#" class="bordered-btn">Share Now</a>
+                    </div>
+                </div>
+                <!-- single share box  -->
+                <div class="single-share-box">
+                    <div class="share-box-left">
+                        <span class="count">4</span>
+                        <p>Facebook- <a href="#">Note Design Assets – all-assets/note?gclid=Cj0KCQiAm4WsBhCiARIsAEJI...</a></p>
+                    </div>
+                    <div class="share-box-btn">
+                        <a href="#" class="bordered-btn">Share Now</a>
+                    </div>
+                </div>
+                <!-- single share box  -->
+                <div class="single-share-box">
+                    <div class="share-box-left">
+                        <span class="count">5</span>
+                        <p>Facebook- <a href="#">Note Design Assets – all-assets/note?gclid=Cj0KCQiAm4WsBhCiARIsAEJI...</a></p>
+                    </div>
+                    <div class="share-box-btn">
+                        <a href="#" class="bordered-btn">Share Now</a>
+                    </div>
+                </div>
+            </section>
+            <!-- end share area  -->
         </div>
     </div>
 
