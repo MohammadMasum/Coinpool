@@ -98,6 +98,13 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap; }
+@font-face {
+  font-family: 'Digital-7 Mono';
+  src: url("../fonts/digital/Digital-7Mono.eot");
+  src: url("../fonts/digital/Digital-7Mono.eot?#iefix") format("embedded-opentype"), url("../fonts/digital/Digital-7Mono.woff2") format("woff2"), url("../fonts/digital/Digital-7Mono.woff") format("woff"), url("../fonts/digital/Digital-7Mono.ttf") format("truetype"), url("../fonts/digital/Digital-7Mono.svg#Digital-7Mono") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
 body {
   line-height: 1.7;
   font-size: 16px;
@@ -494,28 +501,41 @@ img {
 
 .custom-modal {
   z-index: 9999; }
-  .custom-modal.createAccount .modal-content .form-group .text-desc {
-    position: relative;
-    color: #A0A5D7;
-    font-size: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0 10px; }
-    .custom-modal.createAccount .modal-content .form-group .text-desc input {
-      height: auto;
-      width: auto;
-      accent-color: #A0A5D7; }
-    .custom-modal.createAccount .modal-content .form-group .text-desc a {
-      background: linear-gradient(to right, #1CD592, #2683ED);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-  .custom-modal .modal-content {
+
+.dff-bg {
+  background: url(../img/bg/login-bg.png) top center no-repeat;
+  background-size: cover; }
+
+.login-area {
+  padding: 220px 0 0;
+  position: relative;
+  z-index: 1; }
+  .login-area .globe2 {
+    position: absolute;
+    right: 0;
+    top: 5%; }
+  .login-area .modal-content {
     background-color: #14172F;
     border: 1px solid #1CD592;
     padding: 40px;
     border-radius: 30px; }
-    .custom-modal .modal-content .btn-close {
+    .login-area .modal-content.createAccount .form-group .text-desc {
+      position: relative;
+      color: #A0A5D7;
+      font-size: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0 10px; }
+      .login-area .modal-content.createAccount .form-group .text-desc input {
+        height: auto;
+        width: auto;
+        accent-color: #A0A5D7; }
+      .login-area .modal-content.createAccount .form-group .text-desc a {
+        background: linear-gradient(to right, #1CD592, #2683ED);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+    .login-area .modal-content .btn-close {
       position: absolute;
       background: transparent;
       height: 29px;
@@ -528,34 +548,34 @@ img {
       right: 22px;
       top: 22px;
       border: 2px solid #878997; }
-      .custom-modal .modal-content .btn-close i {
+      .login-area .modal-content .btn-close i {
         color: #878997; }
-    .custom-modal .modal-content .modal-body {
+    .login-area .modal-content .modal-body {
       padding: 0; }
-    .custom-modal .modal-content .modal-form-head {
+    .login-area .modal-content .modal-form-head {
       text-align: center;
       margin-bottom: 40px; }
-      .custom-modal .modal-content .modal-form-head .logo {
+      .login-area .modal-content .modal-form-head .logo {
         display: block;
         margin-bottom: 15px; }
-      .custom-modal .modal-content .modal-form-head h3 {
+      .login-area .modal-content .modal-form-head h3 {
         font-size: 36px;
         font-weight: 700; }
-      .custom-modal .modal-content .modal-form-head p {
+      .login-area .modal-content .modal-form-head p {
         font-size: 18px; }
-        .custom-modal .modal-content .modal-form-head p button {
+        .login-area .modal-content .modal-form-head p a {
           color: #2AF6FF;
           background: transparent;
           padding: 0;
           border: none;
           text-decoration: underline; }
-    .custom-modal .modal-content .form-group {
+    .login-area .modal-content .form-group {
       margin-bottom: 20px; }
-      .custom-modal .modal-content .form-group label {
+      .login-area .modal-content .form-group label {
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 15px; }
-      .custom-modal .modal-content .form-group input {
+      .login-area .modal-content .form-group input {
         background: #1E213B;
         border: 1px solid #383B5A;
         padding: 0 15px;
@@ -563,9 +583,9 @@ img {
         border-radius: 8px;
         color: #A0A5D7;
         font-size: 16px; }
-        .custom-modal .modal-content .form-group input::placeholder {
+        .login-area .modal-content .form-group input::placeholder {
           color: #A0A5D7; }
-      .custom-modal .modal-content .form-group select {
+      .login-area .modal-content .form-group select {
         background: #1E213B;
         border: 1px solid #383B5A;
         padding: 0 15px;
@@ -580,39 +600,40 @@ img {
         background-repeat: no-repeat;
         background-position-x: calc(100% - 15px);
         background-position-y: 50%; }
-        .custom-modal .modal-content .form-group select:focus {
+        .login-area .modal-content .form-group select:focus {
           outline: none;
           box-shadow: none; }
-    .custom-modal .modal-content .forgot-wrap {
+    .login-area .modal-content .forgot-wrap {
       margin-bottom: 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 35px; }
-      .custom-modal .modal-content .forgot-wrap p {
+      .login-area .modal-content .forgot-wrap p {
         font-size: 16px;
         margin-bottom: 0;
         color: #A0A5D7; }
-      .custom-modal .modal-content .forgot-wrap .remember {
+      .login-area .modal-content .forgot-wrap .remember {
         position: relative;
         color: #A0A5D7;
         font-size: 16px; }
-        .custom-modal .modal-content .forgot-wrap .remember input {
+        .login-area .modal-content .forgot-wrap .remember input {
           height: auto;
           width: auto;
           accent-color: #A0A5D7; }
-    .custom-modal .modal-content .btn-wrap {
+    .login-area .modal-content .btn-wrap {
       display: flex;
       flex-direction: column;
       gap: 15px;
       margin-bottom: 30px; }
-      .custom-modal .modal-content .btn-wrap button {
+      .login-area .modal-content .btn-wrap button {
         transition: .3s; }
-      .custom-modal .modal-content .btn-wrap .primary-btn {
+      .login-area .modal-content .btn-wrap .primary-btn {
         width: 100%; }
-        .custom-modal .modal-content .btn-wrap .primary-btn i {
+        .login-area .modal-content .btn-wrap .primary-btn i {
           height: 30px;
           width: 30px;
+          min-width: 30px;
           background: white;
           border-radius: 50%;
           color: #2F56FF;
@@ -620,19 +641,19 @@ img {
           align-items: center;
           justify-content: center;
           font-size: 11px; }
-      .custom-modal .modal-content .btn-wrap .or-wrap {
+      .login-area .modal-content .btn-wrap .or-wrap {
         display: flex;
         align-items: center;
         gap: 15px; }
-        .custom-modal .modal-content .btn-wrap .or-wrap span {
+        .login-area .modal-content .btn-wrap .or-wrap span {
           display: block;
           height: 1px;
           width: 100%;
           background: #A0A5D7; }
-        .custom-modal .modal-content .btn-wrap .or-wrap p {
+        .login-area .modal-content .btn-wrap .or-wrap p {
           margin-bottom: 0;
           color: #A0A5D7; }
-      .custom-modal .modal-content .btn-wrap .google-btn {
+      .login-area .modal-content .btn-wrap .google-btn {
         background: #1E213B;
         border: 1px solid #383B5A;
         width: 100%;
@@ -645,21 +666,21 @@ img {
         color: #ffffff;
         font-size: 19px;
         font-weight: 500; }
-        .custom-modal .modal-content .btn-wrap .google-btn:hover {
+        .login-area .modal-content .btn-wrap .google-btn:hover {
           transform: scale(1.05);
           color: #ffffff; }
-    .custom-modal .modal-content .create-account {
+    .login-area .modal-content .create-account {
       margin-bottom: 30px; }
-      .custom-modal .modal-content .create-account p {
+      .login-area .modal-content .create-account p {
         text-align: center;
         color: #ffffff; }
-        .custom-modal .modal-content .create-account p button {
+        .login-area .modal-content .create-account p a {
           color: #2AF6FF;
           background: transparent;
           padding: 0;
           border: none;
           text-decoration: underline; }
-    .custom-modal .modal-content .idos-social {
+    .login-area .modal-content .idos-social {
       justify-content: center; }
 
 /* banner area style
@@ -1294,7 +1315,7 @@ img {
   .header-bar .header-bar-left {
     display: flex;
     align-items: center;
-    gap: 0 30px; }
+    gap: 0 20px; }
     .header-bar .header-bar-left .menu-collapse-trigger {
       width: 40px;
       min-width: 40px;
@@ -1318,10 +1339,9 @@ img {
       font-size: 24px;
       font-weight: 600;
       margin-bottom: 0;
-      font-family: "Sharp Grotesk SemiBold 20";
-      width: 25%; }
+      font-family: "Sharp Grotesk SemiBold 20"; }
     .header-bar .header-bar-left .serch-bar-side {
-      width: 75%; }
+      width: 74%; }
       .header-bar .header-bar-left .serch-bar-side .form-group.search {
         position: relative; }
         .header-bar .header-bar-left .serch-bar-side .form-group.search input {
@@ -2042,6 +2062,557 @@ img {
         font-size: 12px;
         font-weight: 400;
         margin-right: 10px; }
+
+/* Start paginate table style
+============================================================================================ */
+.paginate-table {
+  background: #17243E;
+  padding: 20px;
+  border-radius: 15px; }
+  .paginate-table .dataTables_info {
+    font-size: 14px; }
+  .paginate-table .pagination {
+    justify-content: flex-end; }
+    .paginate-table .pagination .paginate_button.active .page-link {
+      color: #fff;
+      border: 1px solid transparent; }
+      .paginate-table .pagination .paginate_button.active .page-link:before {
+        opacity: 1;
+        visibility: visible; }
+    .paginate-table .pagination .paginate_button .page-link {
+      font-size: 14px;
+      color: #BFC6D2;
+      background-color: transparent;
+      border: 1px solid #ffffff21;
+      position: relative;
+      z-index: 1; }
+      .paginate-table .pagination .paginate_button .page-link:focus {
+        outline: none;
+        box-shadow: none; }
+      .paginate-table .pagination .paginate_button .page-link:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        background-image: linear-gradient(270deg, #2682EE 0%, #1CD691 100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        z-index: -1; }
+
+.table {
+  border-color: #ffffff14; }
+  .table.referral-table td {
+    padding-top: 15px; }
+  .table.referral-table th, .table.referral-table td {
+    vertical-align: middle;
+    text-align: center; }
+  .table th {
+    font-family: "Sharp Grotesk Medium 20", sans-serif;
+    font-weight: 500;
+    text-align: center; }
+  .table td {
+    padding-top: 30px; }
+  .table th, .table td {
+    color: #fff;
+    font-size: 12px;
+    padding: 15px; }
+  .table .count {
+    text-align: center; }
+  .table .register {
+    text-align: center;
+    min-width: 105px; }
+  .table ul {
+    list-style: disc;
+    padding-left: 15px; }
+    .table ul li:not(:last-child) {
+      margin-bottom: 5px; }
+  .table .user-details ul li {
+    position: relative;
+    z-index: 1; }
+    .table .user-details ul li:not(:last-child) {
+      padding-bottom: 5px; }
+      .table .user-details ul li:not(:last-child):after {
+        position: absolute;
+        left: -30px;
+        bottom: 0;
+        height: 1px;
+        width: calc(100% + 45px);
+        content: "";
+        background: #ffffff14; }
+  .table .current-level {
+    vertical-align: middle;
+    text-align: center; }
+  .table .status {
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    z-index: 1; }
+    .table .status .activate {
+      position: relative;
+      border: 1px solid transparent;
+      background: #15394C;
+      background-clip: padding-box;
+      font-size: 14px;
+      font-family: "Sharp Grotesk Book 20", sans-serif;
+      color: #ffffff;
+      padding: 5px 10px;
+      border-radius: 1000px;
+      transition: .3s;
+      text-align: center;
+      line-height: 1; }
+      .table .status .activate:before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        bottom: -1px;
+        left: -1px;
+        right: -1px;
+        background: linear-gradient(to right, #1CD592, #2683ED);
+        z-index: -1;
+        border-radius: 1000px;
+        transition: .3s; }
+    .table .status .deactivate {
+      position: relative;
+      border: 1px solid #FFB5B5;
+      background: #272740;
+      font-size: 14px;
+      font-family: "Sharp Grotesk Book 20", sans-serif;
+      color: #ffffff;
+      padding: 5px 10px;
+      border-radius: 1000px;
+      transition: .3s;
+      text-align: center;
+      line-height: 1; }
+  .table .action {
+    vertical-align: middle;
+    text-align: center; }
+    .table .action .action-icons {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      .table .action .action-icons li:not(:last-child) {
+        margin-bottom: 0; }
+      .table .action .action-icons li a {
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+        color: #fff;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1; }
+        .table .action .action-icons li a:before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          content: "";
+          background-image: linear-gradient(270deg, #2682EE 0%, #1CD691 100%);
+          border-radius: 50%;
+          opacity: 0;
+          visibility: hidden;
+          transition: .3s;
+          z-index: -1; }
+        .table .action .action-icons li a:hover {
+          border: 1px solid transparent; }
+          .table .action .action-icons li a:hover:before {
+            opacity: 1;
+            visibility: visible; }
+
+/* Start presell area style
+============================================================================================ */
+.presell-area .big-note {
+  border-radius: 9px;
+  border: 1px solid #1E5E9F;
+  background: rgba(95, 236, 226, 0.14);
+  text-align: center;
+  border-radius: 9px;
+  padding: 16px 20px;
+  margin-bottom: 70px; }
+  .presell-area .big-note p {
+    font-size: 18px;
+    margin-bottom: 0; }
+.presell-area .total-supply {
+  text-align: center;
+  margin-bottom: 40px; }
+  .presell-area .total-supply p {
+    font-size: 18px;
+    font-family: "Sharp Grotesk Medium 20", sans-serif;
+    color: #FFB9B9; }
+
+.presell-btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 70px; }
+  .presell-btn-wrap .presell-title {
+    font-size: 18px;
+    font-family: "Sharp Grotesk Medium 20", sans-serif;
+    margin-bottom: 0; }
+  .presell-btn-wrap .bordered-btn {
+    font-size: 14px;
+    padding: 11px 25px;
+    background: #14363E;
+    background-clip: padding-box; }
+    .presell-btn-wrap .bordered-btn:before {
+      background: linear-gradient(to right, #178A9E, #22409E); }
+
+.single-presell-box {
+  border-radius: 15px;
+  background: #17243E;
+  box-shadow: 4px 4px 4px 0px rgba(31, 46, 77, 0.62) inset;
+  border-radius: 15px;
+  padding: 25px;
+  height: 100%; }
+  .single-presell-box .title {
+    font-family: "Sharp Grotesk Medium 20", sans-serif;
+    font-size: 18px;
+    margin-bottom: 25px; }
+  .single-presell-box .presell-coin-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px; }
+    .single-presell-box .presell-coin-wrap .icon img {
+      height: 36px;
+      width: 36px; }
+    .single-presell-box .presell-coin-wrap .content h6 {
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      margin-bottom: 8px; }
+    .single-presell-box .presell-coin-wrap .content p {
+      font-size: 14px;
+      color: #BFC6D2;
+      margin-bottom: 0;
+      line-height: 1; }
+  .single-presell-box .presell-price-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    position: relative;
+    z-index: 1; }
+    .single-presell-box .presell-price-wrap .price {
+      display: flex;
+      align-items: center;
+      gap: 13px; }
+      .single-presell-box .presell-price-wrap .price p {
+        font-size: 14px;
+        color: #BFC6D2;
+        margin-bottom: 0; }
+      .single-presell-box .presell-price-wrap .price span {
+        background: #1F3C51;
+        font-size: 14px;
+        color: #ffffff;
+        padding: 13px 20px;
+        border-radius: 1000px;
+        transition: .3s;
+        text-align: center;
+        line-height: 1; }
+    .single-presell-box .presell-price-wrap .closed-btn {
+      position: relative;
+      border: 1px solid #FF8F8F;
+      background: #352C46;
+      font-size: 14px;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 1000px;
+      transition: .3s;
+      text-align: center;
+      line-height: 1; }
+    .single-presell-box .presell-price-wrap .bordered-btn {
+      background: #144050;
+      background-clip: padding-box;
+      padding: 11px 17px;
+      font-size: 14px;
+      line-height: 1; }
+      .single-presell-box .presell-price-wrap .bordered-btn.upcoming {
+        background: #142857;
+        background-clip: padding-box; }
+        .single-presell-box .presell-price-wrap .bordered-btn.upcoming:before {
+          background: linear-gradient(to right, #1ADDFE, #352DFF); }
+  .single-presell-box .progress-wrap {
+    background-image: linear-gradient(0deg, #88FBFF 0%, #2AF6FF 100%);
+    padding: 4px;
+    border-radius: 1000px;
+    margin-bottom: 15px; }
+    .single-presell-box .progress-wrap.orange-progress {
+      background-image: linear-gradient(0deg, #FDE7C9 0%, #FCCC6B 100%); }
+      .single-presell-box .progress-wrap.orange-progress .progress .progress-bar {
+        margin: 2px;
+        background-image: linear-gradient(0deg, #F6F1D2 0%, #F7C752 100%);
+        position: relative;
+        border-radius: 1000px; }
+    .single-presell-box .progress-wrap.blue-progress {
+      background-image: linear-gradient(0deg, #2A3FFF 0%, #839FFF 100%); }
+      .single-presell-box .progress-wrap.blue-progress .progress .progress-bar {
+        margin: 2px;
+        background-image: linear-gradient(0deg, #362DFF 0%, #65B0FE 100%);
+        position: relative;
+        border-radius: 1000px; }
+    .single-presell-box .progress-wrap .progress {
+      height: 16px;
+      border-radius: 1000px;
+      background-color: #1F4466;
+      overflow: visible; }
+      .single-presell-box .progress-wrap .progress .progress-bar {
+        margin: 2px;
+        background-image: linear-gradient(0deg, #03A690 0%, #70F1F1 100%);
+        position: relative;
+        border-radius: 1000px; }
+      .single-presell-box .progress-wrap .progress span {
+        font-size: 12px;
+        margin-top: -30px;
+        margin-left: -30px; }
+  .single-presell-box .note {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0; }
+
+.coin-distribution-area {
+  padding-bottom: 80px; }
+  .coin-distribution-area .title {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: "Sharp Grotesk Medium 20", sans-serif; }
+
+/* Start presell pricing style
+============================================================================================ */
+.presell-pricing {
+  border-radius: 15px;
+  background: #17243E;
+  box-shadow: 4px 4px 4px 0px rgba(31, 46, 77, 0.62) inset;
+  padding: 20px;
+  margin-bottom: 30px; }
+  .presell-pricing .pricing-title-wrap h5 {
+    font-family: "Sharp Grotesk Medium 20", sans-serif;
+    font-size: 20px;
+    margin-bottom: 0; }
+  .presell-pricing .pricing-title-wrap .primary-btn {
+    font-size: 14px;
+    padding: 14px 17px;
+    line-height: 1; }
+
+.single-presell-pricing-item {
+  position: relative;
+  z-index: 1;
+  background: #141E33;
+  padding: 26px;
+  border-radius: 20.929px;
+  border: 1.744px solid rgba(255, 255, 255, 0.1); }
+  .single-presell-pricing-item.active {
+    background: #0D2A3E;
+    background-clip: padding-box;
+    filter: drop-shadow(0px 4px 41px rgba(28, 214, 145, 0.17));
+    border: 1px solid #1DD197; }
+    .single-presell-pricing-item.active .pricing-head {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ffffff38; }
+      .single-presell-pricing-item.active .pricing-head .icon-box .icon {
+        border: 0.872px solid #FFFFFF;
+        background: #FFFFFF; }
+      .single-presell-pricing-item.active .pricing-head .short-desc {
+        color: #fff; }
+    .single-presell-pricing-item.active .pricing-body ul li {
+      position: relative;
+      font-size: 15px;
+      color: #fff;
+      padding-left: 30px; }
+      .single-presell-pricing-item.active .pricing-body ul li:not(:last-child) {
+        margin-bottom: 15px; }
+      .single-presell-pricing-item.active .pricing-body ul li i {
+        background: linear-gradient(to right, #1CD592, #2683ED);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-color: #fff; }
+    .single-presell-pricing-item.active .pricing-body .bordered-btn {
+      background: transparent; }
+  .single-presell-pricing-item .pricing-head {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #2D2D40; }
+    .single-presell-pricing-item .pricing-head .icon-box {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      margin-bottom: 20px; }
+      .single-presell-pricing-item .pricing-head .icon-box .icon {
+        border-radius: 10000px;
+        border: 0.872px solid #2D2D40;
+        background: #1E1E2C;
+        height: 60px;
+        width: 60px;
+        min-width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .single-presell-pricing-item .pricing-head .icon-box .content h5 {
+        font-family: "Sharp Grotesk Medium 20", sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px; }
+      .single-presell-pricing-item .pricing-head .icon-box .content p {
+        font-family: "Sharp Grotesk Medium 20", sans-serif;
+        font-size: 15px;
+        margin-bottom: 0;
+        color: #BFC6D2;
+        line-height: 1; }
+    .single-presell-pricing-item .pricing-head .short-desc {
+      font-size: 14px;
+      color: #BFC6D2;
+      margin-bottom: 0; }
+  .single-presell-pricing-item .pricing-body .price {
+    font-family: "Sharp Grotesk Medium 20", sans-serif;
+    font-size: 45px;
+    margin-bottom: 25px; }
+  .single-presell-pricing-item .pricing-body ul {
+    margin-bottom: 35px; }
+    .single-presell-pricing-item .pricing-body ul li {
+      position: relative;
+      font-size: 15px;
+      color: #BFC6D2;
+      padding-left: 30px; }
+      .single-presell-pricing-item .pricing-body ul li:not(:last-child) {
+        margin-bottom: 15px; }
+      .single-presell-pricing-item .pricing-body ul li .check-icon {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        color: #428BF9;
+        background: #fff;
+        border-radius: 50%;
+        display: flex; }
+  .single-presell-pricing-item .pricing-body .bordered-btn {
+    background: #141E33;
+    background-clip: padding-box; }
+
+.timer-area {
+  padding-bottom: 80px; }
+  .timer-area h5 {
+    text-align: center;
+    font-family: "Sharp Grotesk Medium 20", sans-serif;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1.5; }
+
+.timer-wraper {
+  background: #141E33;
+  padding: 25px;
+  border-radius: 20.929px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  .timer-wraper .circle-shadow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; }
+  .timer-wraper .timer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center; }
+    .timer-wraper .timer-inner span {
+      border-radius: 2.57px;
+      border: 0.514px solid #21ABC1;
+      background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.1) 100%);
+      backdrop-filter: blur(16.7068271637px);
+      font-size: 70px;
+      margin: 0 5px;
+      font-family: 'Digital-7 Mono';
+      color: #0E0F0F;
+      height: 81px;
+      width: 51px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px; }
+    .timer-wraper .timer-inner .label {
+      font-size: 20px;
+      font-family: "Sharp Grotesk SemiBold 20";
+      text-transform: uppercase;
+      margin-top: 12px;
+      display: block; }
+
+/* Start qr code style
+============================================================================================ */
+.qr-code-area {
+  border-radius: 15px;
+  background: #17243E;
+  box-shadow: 4px 4px 4px 0px rgba(31, 46, 77, 0.62) inset; }
+  .qr-code-area .qr-inner {
+    padding: 20px; }
+  .qr-code-area .title {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-family: "Sharp Grotesk Medium 20", sans-serif;
+    border-bottom: 1px solid #ffffff14;
+    padding: 20px; }
+  .qr-code-area .qr-wrap {
+    text-align: center;
+    margin-bottom: 40px; }
+    .qr-code-area .qr-wrap h5 {
+      font-size: 18px;
+      margin-bottom: 30px;
+      font-family: "Sharp Grotesk Medium 20", sans-serif;
+      text-align: left; }
+    .qr-code-area .qr-wrap img {
+      margin-bottom: 30px; }
+    .qr-code-area .qr-wrap h4 {
+      font-size: 24px;
+      font-family: "Sharp Grotesk SemiBold 20";
+      margin-bottom: 15px; }
+    .qr-code-area .qr-wrap p {
+      font-size: 18px;
+      color: #FFB9B9;
+      font-family: "Sharp Grotesk Medium 20", sans-serif;
+      margin-bottom: 0; }
+  .qr-code-area .payment-wrap {
+    padding: 25px;
+    background: #ffffff0a;
+    border-radius: 5px; }
+    .qr-code-area .payment-wrap .single-payment-item {
+      background: #ffffff0a;
+      border: 1px solid #ffffff0a;
+      border-radius: 5px;
+      display: flex;
+      align-items: center; }
+      .qr-code-area .payment-wrap .single-payment-item:not(:last-child) {
+        margin-bottom: 20px; }
+      .qr-code-area .payment-wrap .single-payment-item h5 {
+        background: #ffffff0a;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: "Sharp Grotesk Medium 20", sans-serif;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 18px;
+        width: 25%; }
+      .qr-code-area .payment-wrap .single-payment-item p {
+        margin-bottom: 0; }
+      .qr-code-area .payment-wrap .single-payment-item .right-content {
+        padding-left: 40px;
+        padding-right: 10px;
+        width: 75%; }
+        .qr-code-area .payment-wrap .single-payment-item .right-content p {
+          font-size: 16px; }
+          .qr-code-area .payment-wrap .single-payment-item .right-content p a {
+            color: #21D68C; }
+        .qr-code-area .payment-wrap .single-payment-item .right-content .copy-text {
+          background: transparent;
+          width: 100%;
+          padding: 0; }
 
 /* Start Header area style
 ============================================================================================ */

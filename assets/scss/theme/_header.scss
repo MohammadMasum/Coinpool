@@ -108,8 +108,29 @@
 
 .custom-modal {
     z-index: 9999;
-    &.createAccount {
-        .modal-content {
+    
+}
+
+.dff-bg {
+    background: url(../img/bg/login-bg.png) top center no-repeat;
+    background-size: cover;
+}
+
+.login-area {
+    padding: 220px 0 0;
+    position: relative;
+    z-index: 1;
+    .globe2 {
+        position: absolute;
+        right: 0;
+        top: 5%;
+    }
+    .modal-content {
+        background-color: #14172F;
+        border: 1px solid $primary-color;
+        padding: 40px;
+        border-radius: 30px;
+        &.createAccount {
             .form-group {
                 .text-desc {
                     position: relative;
@@ -131,14 +152,7 @@
                     }
                 }
             }
-
         }
-    }
-    .modal-content {
-        background-color: #14172F;
-        border: 1px solid $primary-color;
-        padding: 40px;
-        border-radius: 30px;
         .btn-close {
             position: absolute;
             background: transparent;
@@ -172,7 +186,7 @@
             }
             p {
                 font-size: 18px;
-                button {
+                a {
                     color: #2AF6FF;
                     background: transparent;
                     padding: 0;
@@ -256,6 +270,7 @@
                 i {
                     height: 30px;
                     width: 30px;
+                    min-width: 30px;
                     background: white;
                     border-radius: 50%;
                     color: #2F56FF;
@@ -304,7 +319,7 @@
             p {
                 text-align: center;
                 color: $white;
-                button {
+                a {
                     color: #2AF6FF;
                     background: transparent;
                     padding: 0;

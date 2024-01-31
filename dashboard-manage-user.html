@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="assets/img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="webfirefly">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Mycoinpool-manage-user</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="dashboard-body">
+    <div class="main-dashboard">
+        <div class="sidebar">
+            <i class="fas fa-times"></i>
+            <div class="logo-wrap">
+                <img class="desktop-logo" src="assets/img/logo.svg" alt="">
+            </div>
+            <div class="sidebar-menu-wrap">
+                <ul class="navigation mb-4">
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/dashboard.svg" alt=""></span> <span class="menu-text">Dashboard</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/presell.svg" alt=""></span> <span class="menu-text">Presell</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/ico.svg" alt=""></span> <span class="menu-text">ICO</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/air-drop.svg" alt=""></span> <span class="menu-text">Air Drop</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/gift.svg" alt=""></span> <span class="menu-text">Gifts</span></a></li>
+                </ul>
+                <p class="menu-title mb-4">Manage User</p>
+                <ul class="navigation mb-4">
+                    <li><a class="active" href="#"><span class="menu-icon"><img src="assets/img/icons/user.svg" alt=""></span> <span class="menu-text">User List</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/deleted.svg" alt=""></span> <span class="menu-text">Deleted List</span></a></li>
+                </ul>
+                <p class="menu-title mb-4">User Panel</p>
+                <ul class="navigation mb-4">
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/manage.svg" alt=""></span> <span class="menu-text">Manage Wallet</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/donation.svg" alt=""></span> <span class="menu-text">Donation History</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/receive.svg" alt=""></span> <span class="menu-text">Receive History</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/referral.svg" alt=""></span> <span class="menu-text">Referral User</span></a></li>
+                </ul>
+                <p class="menu-title mb-4">Basic Settings</p>
+                <ul class="navigation">
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/update-profile.svg" alt=""></span> <span class="menu-text">Update Profile</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/update-password.svg" alt=""></span> <span class="menu-text">Update Password</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/manage-2fa.png" alt=""></span> <span class="menu-text">Manage 2FA</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/logout.svg" alt=""></span> <span class="menu-text">Log Out</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <!-- header bar -->
+            <section class="header-bar">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-md-6">
+                        <div class="header-bar-left">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="menu-collapse-trigger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <h4>Manage User</h4>
+                            </div>
+                            <div class="serch-bar-side">
+                                <div class="form-group search">
+                                    <input type="search" name="" id="" placeholder="Search here...">
+                                    <img class="search-icon" src="assets/img/icons/search.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-md-6">
+                        <div class="header-bar-right">
+                            <button type="button" class="header-btn" data-bs-toggle="modal" data-bs-target="#join">300 CRM <img src="assets/img/wallet.svg" alt=""></button>
+                            <div class="notification">
+                                <span></span>
+                                <img src="assets/img/icons/notification.svg" alt="">
+                            </div>
+                            <div class="account-details">
+                                <a href="#" class="display-picture"><img src="assets/img/icons/profile-user.png" alt=""></a>
+                                <div class="card hidden">
+                                    <ul>
+                                        <li><a href="#">Profile</li></a>
+                                        <li><a href="#">Account</li></a>
+                                        <li><a href="#">Settings</li></a>
+                                        <li><a href="#">Log Out</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- start table area  -->
+            <section class="paginate-table">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h5 class="title mb-4">Manage User</h5>
+                        <table id="manager_user" class="table table-bordered" data-order='[[ 1, "asc" ]]' data-page-length='5'>
+                            <thead>
+                                <tr>
+                                    <th>SN</th>
+                                    <th>Register At</th>
+                                    <th>User Detail</th>
+                                    <th>Username</th>
+                                    <th>Refer By</th>
+                                    <th>Parent User</th>
+                                    <th>Current Level</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="count">1</td>
+                                    <td class="register">
+                                        <span>2024-01-01 <br>
+                                            19:50:26</span>
+                                    </td>
+                                    <td class="user-details">
+                                        <ul>
+                                            <li>Md.Shaifuddin</li>
+                                            <li>sunmoon.area@gmail.com</li>
+                                            <li>01736166360</li>
+                                        </ul>
+                                    </td>
+                                    <td class="user-name">
+                                        <ul>
+                                            <li>Dhaka001170</li>
+                                            <li>1704135026</li>
+                                            <li>Bangladesh</li>
+                                        </ul>
+                                    </td>
+                                    <td class="refer">
+                                        <ul>
+                                            <li>Mizan</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="parent-user">
+                                            <li>Yousuf</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td class="current-level">
+                                        <img src="assets/img/icons/level-badge1.svg" alt="">
+                                    </td>
+                                    <td class="status">
+                                        <a href="#" class="deactivate">Deactivate</a>
+                                    </td>
+                                    <td class="action">
+                                        <ul class="action-icons">
+                                            <li><a href="#"><i class="fas fa-edit"></i></a></li>
+                                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4.214 3.227a.75.75 0 00-1.156-.956 8.97 8.97 0 00-1.856 3.826.75.75 0 001.466.316 7.47 7.47 0 011.546-3.186zM16.942 2.271a.75.75 0 00-1.157.956 7.47 7.47 0 011.547 3.186.75.75 0 001.466-.316 8.971 8.971 0 00-1.856-3.826z"></path><path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 1.887-.454 3.665-1.257 5.234a.75.75 0 00.515 1.076 32.94 32.94 0 003.256.508 3.5 3.5 0 006.972 0 32.933 32.933 0 003.256-.508.75.75 0 00.515-1.076A11.448 11.448 0 0116 8a6 6 0 00-6-6zm0 14.5a2 2 0 01-1.95-1.557 33.54 33.54 0 003.9 0A2 2 0 0110 16.5z" clip-rule="evenodd"></path></svg></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="416" height="384" x="48" y="80" fill="none" stroke-linejoin="round" stroke-width="32" rx="48"></rect><circle cx="296" cy="232" r="24"></circle><circle cx="376" cy="232" r="24"></circle><circle cx="296" cy="312" r="24"></circle><circle cx="376" cy="312" r="24"></circle><circle cx="136" cy="312" r="24"></circle><circle cx="216" cy="312" r="24"></circle><circle cx="136" cy="392" r="24"></circle><circle cx="216" cy="392" r="24"></circle><circle cx="296" cy="392" r="24"></circle><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M128 48v32m256-32v32"></path><path fill="none" stroke-linejoin="round" stroke-width="32" d="M464 160H48"></path></svg></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="count">2</td>
+                                    <td class="register">
+                                        <span>2024-01-01 <br>
+                                            19:50:26</span>
+                                    </td>
+                                    <td class="user-details">
+                                        <ul>
+                                            <li>Md.Shaifuddin</li>
+                                            <li>sunmoon.area@gmail.com</li>
+                                            <li>01736166360</li>
+                                        </ul>
+                                    </td>
+                                    <td class="user-name">
+                                        <ul>
+                                            <li>Dhaka001170</li>
+                                            <li>1704135026</li>
+                                            <li>Bangladesh</li>
+                                        </ul>
+                                    </td>
+                                    <td class="refer">
+                                        <ul>
+                                            <li>Mizan</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="parent-user">
+                                            <li>Yousuf</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td class="current-level">
+                                        <img src="assets/img/icons/level-badge2.svg" alt="">
+                                    </td>
+                                    <td class="status">
+                                        <a href="#" class="activate">Activate</a>
+                                    </td>
+                                    <td class="action">
+                                        <ul class="action-icons">
+                                            <li><a href="#"><i class="fas fa-edit"></i></a></li>
+                                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4.214 3.227a.75.75 0 00-1.156-.956 8.97 8.97 0 00-1.856 3.826.75.75 0 001.466.316 7.47 7.47 0 011.546-3.186zM16.942 2.271a.75.75 0 00-1.157.956 7.47 7.47 0 011.547 3.186.75.75 0 001.466-.316 8.971 8.971 0 00-1.856-3.826z"></path><path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 1.887-.454 3.665-1.257 5.234a.75.75 0 00.515 1.076 32.94 32.94 0 003.256.508 3.5 3.5 0 006.972 0 32.933 32.933 0 003.256-.508.75.75 0 00.515-1.076A11.448 11.448 0 0116 8a6 6 0 00-6-6zm0 14.5a2 2 0 01-1.95-1.557 33.54 33.54 0 003.9 0A2 2 0 0110 16.5z" clip-rule="evenodd"></path></svg></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="416" height="384" x="48" y="80" fill="none" stroke-linejoin="round" stroke-width="32" rx="48"></rect><circle cx="296" cy="232" r="24"></circle><circle cx="376" cy="232" r="24"></circle><circle cx="296" cy="312" r="24"></circle><circle cx="376" cy="312" r="24"></circle><circle cx="136" cy="312" r="24"></circle><circle cx="216" cy="312" r="24"></circle><circle cx="136" cy="392" r="24"></circle><circle cx="216" cy="392" r="24"></circle><circle cx="296" cy="392" r="24"></circle><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M128 48v32m256-32v32"></path><path fill="none" stroke-linejoin="round" stroke-width="32" d="M464 160H48"></path></svg></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="count">3</td>
+                                    <td class="register">
+                                        <span>2024-01-01 <br>
+                                            19:50:26</span>
+                                    </td>
+                                    <td class="user-details">
+                                        <ul>
+                                            <li>Md.Shaifuddin</li>
+                                            <li>sunmoon.area@gmail.com</li>
+                                            <li>01736166360</li>
+                                        </ul>
+                                    </td>
+                                    <td class="user-name">
+                                        <ul>
+                                            <li>Dhaka001170</li>
+                                            <li>1704135026</li>
+                                            <li>Bangladesh</li>
+                                        </ul>
+                                    </td>
+                                    <td class="refer">
+                                        <ul>
+                                            <li>Mizan</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="parent-user">
+                                            <li>Yousuf</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td class="current-level">
+                                        <img src="assets/img/icons/level-badge1.svg" alt="">
+                                    </td>
+                                    <td class="status">
+                                        <a href="#" class="deactivate">Deactivate</a>
+                                    </td>
+                                    <td class="action">
+                                        <ul class="action-icons">
+                                            <li><a href="#"><i class="fas fa-edit"></i></a></li>
+                                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4.214 3.227a.75.75 0 00-1.156-.956 8.97 8.97 0 00-1.856 3.826.75.75 0 001.466.316 7.47 7.47 0 011.546-3.186zM16.942 2.271a.75.75 0 00-1.157.956 7.47 7.47 0 011.547 3.186.75.75 0 001.466-.316 8.971 8.971 0 00-1.856-3.826z"></path><path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 1.887-.454 3.665-1.257 5.234a.75.75 0 00.515 1.076 32.94 32.94 0 003.256.508 3.5 3.5 0 006.972 0 32.933 32.933 0 003.256-.508.75.75 0 00.515-1.076A11.448 11.448 0 0116 8a6 6 0 00-6-6zm0 14.5a2 2 0 01-1.95-1.557 33.54 33.54 0 003.9 0A2 2 0 0110 16.5z" clip-rule="evenodd"></path></svg></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="416" height="384" x="48" y="80" fill="none" stroke-linejoin="round" stroke-width="32" rx="48"></rect><circle cx="296" cy="232" r="24"></circle><circle cx="376" cy="232" r="24"></circle><circle cx="296" cy="312" r="24"></circle><circle cx="376" cy="312" r="24"></circle><circle cx="136" cy="312" r="24"></circle><circle cx="216" cy="312" r="24"></circle><circle cx="136" cy="392" r="24"></circle><circle cx="216" cy="392" r="24"></circle><circle cx="296" cy="392" r="24"></circle><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M128 48v32m256-32v32"></path><path fill="none" stroke-linejoin="round" stroke-width="32" d="M464 160H48"></path></svg></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="count">4</td>
+                                    <td class="register">
+                                        <span>2024-01-01 <br>
+                                            19:50:26</span>
+                                    </td>
+                                    <td class="user-details">
+                                        <ul>
+                                            <li>Md.Shaifuddin</li>
+                                            <li>sunmoon.area@gmail.com</li>
+                                            <li>01736166360</li>
+                                        </ul>
+                                    </td>
+                                    <td class="user-name">
+                                        <ul>
+                                            <li>Dhaka001170</li>
+                                            <li>1704135026</li>
+                                            <li>Bangladesh</li>
+                                        </ul>
+                                    </td>
+                                    <td class="refer">
+                                        <ul>
+                                            <li>Mizan</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="parent-user">
+                                            <li>Yousuf</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td class="current-level">
+                                        <img src="assets/img/icons/level-badge2.svg" alt="">
+                                    </td>
+                                    <td class="status">
+                                        <a href="#" class="activate">Activate</a>
+                                    </td>
+                                    <td class="action">
+                                        <ul class="action-icons">
+                                            <li><a href="#"><i class="fas fa-edit"></i></a></li>
+                                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4.214 3.227a.75.75 0 00-1.156-.956 8.97 8.97 0 00-1.856 3.826.75.75 0 001.466.316 7.47 7.47 0 011.546-3.186zM16.942 2.271a.75.75 0 00-1.157.956 7.47 7.47 0 011.547 3.186.75.75 0 001.466-.316 8.971 8.971 0 00-1.856-3.826z"></path><path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 1.887-.454 3.665-1.257 5.234a.75.75 0 00.515 1.076 32.94 32.94 0 003.256.508 3.5 3.5 0 006.972 0 32.933 32.933 0 003.256-.508.75.75 0 00.515-1.076A11.448 11.448 0 0116 8a6 6 0 00-6-6zm0 14.5a2 2 0 01-1.95-1.557 33.54 33.54 0 003.9 0A2 2 0 0110 16.5z" clip-rule="evenodd"></path></svg></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="416" height="384" x="48" y="80" fill="none" stroke-linejoin="round" stroke-width="32" rx="48"></rect><circle cx="296" cy="232" r="24"></circle><circle cx="376" cy="232" r="24"></circle><circle cx="296" cy="312" r="24"></circle><circle cx="376" cy="312" r="24"></circle><circle cx="136" cy="312" r="24"></circle><circle cx="216" cy="312" r="24"></circle><circle cx="136" cy="392" r="24"></circle><circle cx="216" cy="392" r="24"></circle><circle cx="296" cy="392" r="24"></circle><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M128 48v32m256-32v32"></path><path fill="none" stroke-linejoin="round" stroke-width="32" d="M464 160H48"></path></svg></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="count">5</td>
+                                    <td class="register">
+                                        <span>2024-01-01 <br>
+                                            19:50:26</span>
+                                    </td>
+                                    <td class="user-details">
+                                        <ul>
+                                            <li>Md.Shaifuddin</li>
+                                            <li>sunmoon.area@gmail.com</li>
+                                            <li>01736166360</li>
+                                        </ul>
+                                    </td>
+                                    <td class="user-name">
+                                        <ul>
+                                            <li>Dhaka001170</li>
+                                            <li>1704135026</li>
+                                            <li>Bangladesh</li>
+                                        </ul>
+                                    </td>
+                                    <td class="refer">
+                                        <ul>
+                                            <li>Mizan</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="parent-user">
+                                            <li>Yousuf</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td class="current-level">
+                                        <img src="assets/img/icons/level-badge1.svg" alt="">
+                                    </td>
+                                    <td class="status">
+                                        <a href="#" class="deactivate">Deactivate</a>
+                                    </td>
+                                    <td class="action">
+                                        <ul class="action-icons">
+                                            <li><a href="#"><i class="fas fa-edit"></i></a></li>
+                                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4.214 3.227a.75.75 0 00-1.156-.956 8.97 8.97 0 00-1.856 3.826.75.75 0 001.466.316 7.47 7.47 0 011.546-3.186zM16.942 2.271a.75.75 0 00-1.157.956 7.47 7.47 0 011.547 3.186.75.75 0 001.466-.316 8.971 8.971 0 00-1.856-3.826z"></path><path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 1.887-.454 3.665-1.257 5.234a.75.75 0 00.515 1.076 32.94 32.94 0 003.256.508 3.5 3.5 0 006.972 0 32.933 32.933 0 003.256-.508.75.75 0 00.515-1.076A11.448 11.448 0 0116 8a6 6 0 00-6-6zm0 14.5a2 2 0 01-1.95-1.557 33.54 33.54 0 003.9 0A2 2 0 0110 16.5z" clip-rule="evenodd"></path></svg></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="416" height="384" x="48" y="80" fill="none" stroke-linejoin="round" stroke-width="32" rx="48"></rect><circle cx="296" cy="232" r="24"></circle><circle cx="376" cy="232" r="24"></circle><circle cx="296" cy="312" r="24"></circle><circle cx="376" cy="312" r="24"></circle><circle cx="136" cy="312" r="24"></circle><circle cx="216" cy="312" r="24"></circle><circle cx="136" cy="392" r="24"></circle><circle cx="216" cy="392" r="24"></circle><circle cx="296" cy="392" r="24"></circle><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M128 48v32m256-32v32"></path><path fill="none" stroke-linejoin="round" stroke-width="32" d="M464 160H48"></path></svg></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="count">6</td>
+                                    <td class="register">
+                                        <span>2024-01-01 <br>
+                                            19:50:26</span>
+                                    </td>
+                                    <td class="user-details">
+                                        <ul>
+                                            <li>Md.Shaifuddin</li>
+                                            <li>sunmoon.area@gmail.com</li>
+                                            <li>01736166360</li>
+                                        </ul>
+                                    </td>
+                                    <td class="user-name">
+                                        <ul>
+                                            <li>Dhaka001170</li>
+                                            <li>1704135026</li>
+                                            <li>Bangladesh</li>
+                                        </ul>
+                                    </td>
+                                    <td class="refer">
+                                        <ul>
+                                            <li>Mizan</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="parent-user">
+                                            <li>Yousuf</li>
+                                            <li>1704135026</li>
+                                            <li>United Arab Emirates</li>
+                                        </ul>
+                                    </td>
+                                    <td class="current-level">
+                                        <img src="assets/img/icons/level-badge2.svg" alt="">
+                                    </td>
+                                    <td class="status">
+                                        <a href="#" class="activate">Activate</a>
+                                    </td>
+                                    <td class="action">
+                                        <ul class="action-icons">
+                                            <li><a href="#"><i class="fas fa-edit"></i></a></li>
+                                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4.214 3.227a.75.75 0 00-1.156-.956 8.97 8.97 0 00-1.856 3.826.75.75 0 001.466.316 7.47 7.47 0 011.546-3.186zM16.942 2.271a.75.75 0 00-1.157.956 7.47 7.47 0 011.547 3.186.75.75 0 001.466-.316 8.971 8.971 0 00-1.856-3.826z"></path><path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6c0 1.887-.454 3.665-1.257 5.234a.75.75 0 00.515 1.076 32.94 32.94 0 003.256.508 3.5 3.5 0 006.972 0 32.933 32.933 0 003.256-.508.75.75 0 00.515-1.076A11.448 11.448 0 0116 8a6 6 0 00-6-6zm0 14.5a2 2 0 01-1.95-1.557 33.54 33.54 0 003.9 0A2 2 0 0110 16.5z" clip-rule="evenodd"></path></svg></a></li>
+                                            <li><a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="416" height="384" x="48" y="80" fill="none" stroke-linejoin="round" stroke-width="32" rx="48"></rect><circle cx="296" cy="232" r="24"></circle><circle cx="376" cy="232" r="24"></circle><circle cx="296" cy="312" r="24"></circle><circle cx="376" cy="312" r="24"></circle><circle cx="136" cy="312" r="24"></circle><circle cx="216" cy="312" r="24"></circle><circle cx="136" cy="392" r="24"></circle><circle cx="216" cy="392" r="24"></circle><circle cx="296" cy="392" r="24"></circle><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M128 48v32m256-32v32"></path><path fill="none" stroke-linejoin="round" stroke-width="32" d="M464 160H48"></path></svg></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <!-- end table area  -->
+        </div>
+    </div>
+
+    <!-- All js here -->
+    <script src="assets/js/jquery-3.6.0-min.js "></script>
+    <script src="assets/js/jquery.sticky.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/jquery.parallax-scroll.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn2.hubspot.net/hubfs/476360/Chart.js"></script>
+    <script src="https://cdn2.hubspot.net/hubfs/476360/utils.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js "></script>
+
+</body>
+
+</html>

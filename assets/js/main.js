@@ -110,8 +110,55 @@
         });
 
 
+        $(document).ready(function() {
+            $('#manager_user').dataTable( {
+                "searching": false,
+                "lengthChange": false
+            })
+        });
+
     });
 }(jQuery));
+
+
+// timer 
+function updateTimer() {
+    future = Date.parse("feb 2, 2024 11:30:00");
+    now = new Date();
+    diff = future - now;
+
+    // Ensure the timer values are not negative
+    if (diff < 0) {
+        days = hours = mins = secs = 0;
+    } else {
+        days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        hours = Math.floor(diff / (1000 * 60 * 60));
+        mins = Math.floor(diff / (1000 * 60));
+        secs = Math.floor(diff / 1000);
+    }
+
+    d = days;
+    h = hours - days * 24;
+    m = mins - hours * 60;
+    s = secs - mins * 60;
+
+    document.getElementById("timer")
+        .innerHTML =
+        '<div class="days">' + wrapDigits(d) + '<div class="label">days</div></div>' +
+        '<div class="hours">' + wrapDigits(h) + '<div class="label">hours</div></div>' +
+        '<div class="mins">' + wrapDigits(m) + '<div class="label">minutes</div></div>';
+        // '<div class="sec">' + wrapDigits(s) + '<span>seconds</span></div>';
+}
+
+function wrapDigits(number) {
+    // Convert the number to a string and add a leading zero if it's a single digit
+    const paddedNumber = number < 10 ? '0' + number : number;
+    return paddedNumber.toString().split('').map(digit => '<span>' + digit + '</span>').join('');
+}
+
+setInterval(updateTimer, 1000);
+
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -164,3 +211,83 @@ copyText.querySelector("button").addEventListener("click", function () {
 		copyText.classList.remove("active");
 	}, 2500);
 }); 
+
+
+
+var config = {
+    type: 'line',
+    data: {
+        labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+        datasets: [{
+            label: 'APAC PME',
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            fill: false,
+            borderColor: '#22A2CB',
+            data: [
+                50,
+                300,
+                100,
+                450,
+                150,
+                200,
+                300
+            ],
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: false,
+            text: 'Chart.js Line Chart - Logarithmic'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: ''
+                },
+                ticks: {
+                    fontColor: 'white' // Set text color to white
+                },
+                gridLines: {
+                    display: false // Hide grid lines on the x-axis
+                }
+            }],
+            yAxes: [{
+                display: true,
+                //type: 'logarithmic',
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Index Returns'
+                },
+                ticks: {
+                    min: 0,
+                    max: 500,
+                    stepSize: 100,
+                    fontColor: 'white' // Set text color to white
+                },
+                gridLines: {
+                    display: false // Hide grid lines on the y-axis
+                }
+            }]
+        }
+    }
+};
+
+window.onload = function() {
+    var ctx = document.getElementById('canvas').getContext('2d');
+    window.myLine = new Chart(ctx, config);
+};
+
+document.getElementById('randomizeData').addEventListener('click', function() {
+    config.data.datasets.forEach(function(dataset) {
+        dataset.data = dataset.data.map(function() {
+            return randomScalingFactor();
+        });
+
+    });
+
+    window.myLine.update();
+});

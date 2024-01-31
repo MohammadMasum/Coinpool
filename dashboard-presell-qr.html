@@ -15,7 +15,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Mycoinpool-2fa-management</title>
+    <title>Mycoinpool-Presell</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
             <div class="sidebar-menu-wrap">
                 <ul class="navigation mb-4">
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/dashboard.svg" alt=""></span> <span class="menu-text">Dashboard</span></a></li>
-                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/presell.svg" alt=""></span> <span class="menu-text">Presell</span></a></li>
+                    <li><a class="active" href="#"><span class="menu-icon"><img src="assets/img/icons/presell.svg" alt=""></span> <span class="menu-text">Presell</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/ico.svg" alt=""></span> <span class="menu-text">ICO</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/air-drop.svg" alt=""></span> <span class="menu-text">Air Drop</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/gift.svg" alt=""></span> <span class="menu-text">Gifts</span></a></li>
@@ -57,7 +57,7 @@
                 <ul class="navigation">
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/update-profile.svg" alt=""></span> <span class="menu-text">Update Profile</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/update-password.svg" alt=""></span> <span class="menu-text">Update Password</span></a></li>
-                    <li><a class="active" href="#"><span class="menu-icon"><img src="assets/img/icons/manage-2fa.png" alt=""></span> <span class="menu-text">Manage 2FA</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/manage-2fa.png" alt=""></span> <span class="menu-text">Manage 2FA</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/logout.svg" alt=""></span> <span class="menu-text">Log Out</span></a></li>
                 </ul>
             </div>
@@ -74,7 +74,7 @@
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <h4>2FA Management</h4>
+                                <h4>Presell</h4>
                             </div>
                             <div class="serch-bar-side">
                                 <div class="form-group search">
@@ -106,12 +106,37 @@
                     </div>
                 </div>
             </section>
-            <!-- start verify info area  -->
-            <section class="verify-info-area">
-                <img class="small-circle" src="assets/img/small-circle.png" alt="">
-                <h5 class="mb-4">2FA Management</h5>
-                <a href="#" class="primary-btn">Click here to enable 2FA <i class="fas fa-arrow-right"></i></a>
+            
+            <!-- start qr code area  -->
+            <section class="qr-code-area">
+                <h5 class="title">Plan Purchase Payment</h5>
+                <div class="qr-inner">
+                    <div class="qr-wrap">
+                        <h5>Step-1</h5>
+                        <img class="img-fluid" src="assets/img/qr-code.svg" alt="">
+                        <h4>SCAN TO SEND</h4>
+                        <p>NB: 3 Confirmation required to credited your account</p>
+                    </div>
+                    <div class="payment-wrap">
+                        <div class="single-payment-item">
+                            <h5>Sended Amount</h5>
+                            <div class="right-content">
+                                <p>931 USDT Tether (TRC20) <a href="#">(pay exact same amount)</a></p>
+                            </div>
+                        </div>
+                        <div class="single-payment-item">
+                            <h5>Sended Address</h5>
+                            <div class="right-content">
+                                <div class="copy-text">
+                                    <input type="text" class="text" value="TXWmfYfw6nPKRQNt4aconyYmxVuVLDwkzh" />
+                                    <button><i class="far fa-copy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+            <!-- end qr code area  -->
         </div>
     </div>
 

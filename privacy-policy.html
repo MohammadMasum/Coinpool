@@ -47,147 +47,13 @@
                         <li class="nav-item"><a class="nav-link" href="#eco">ECO</a></li>
                     </ul>
                     <ul class="header-btn-wrap navbar-nav ms-auto">
-                        <li><button type="button" class="header-btn" data-bs-toggle="modal" data-bs-target="#join">Create an account <img src="assets/img/wallet.svg" alt=""></button></li>
+                        <li><a class="header-btn" href="sign-up.html">Create an account <img src="assets/img/wallet.svg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <!--end navigation area-->
-
-    <!-- Join Modal -->
-    <div class="modal custom-modal fade" id="join" tabindex="-1" aria-labelledby="joinLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-                <div class="modal-body">
-                    <div class="modal-form-head">
-                        <a href="#" class="logo"><img src="assets/img/logo.png" alt=""></a>
-                        <h3>Wellcome Back!</h3>
-                        <p>Please login to your account.</p>
-                    </div>
-                    <form action="" class="modal-form">
-                        <div class="form-group">
-                            <label>User ID Or Username</label>
-                            <input type="text" placeholder="User ID Or Username">
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" placeholder="Enter Password">
-                        </div>
-                        <div class="forgot-wrap">
-                            <label class="remember" for="remember"><input type="checkbox" name="remember" id="remember"> Remember Me</label>
-                            <p>Forgot Password</p>
-                        </div>
-                        <div class="btn-wrap">
-                            <button type="submit" class="primary-btn">Join Now on Mycoinpoll <i class="fas fa-arrow-right"></i></button>
-                            <div class="or-wrap">
-                                <span></span>
-                                <p>Or</p>
-                                <span></span>
-                            </div>
-                            <button type="submit" class="google-btn"><img src="assets/img/google.svg" alt=""> Sign in with Google</button>
-                        </div>
-                        <div class="create-account">
-                            <p>Create an account? <button type="button" data-bs-toggle="modal" data-bs-target="#createAccount">Sign up</button></p>
-                        </div>
-                        <ul class="idos-social">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        </ul>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-  
-    <!-- Create Account Modal -->
-    <div class="modal custom-modal createAccount fade" id="createAccount" tabindex="-1" aria-labelledby="createAccountLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-                <div class="modal-body">
-                    <div class="modal-form-head">
-                        <a href="#" class="logo"><img src="assets/img/logo.png" alt=""></a>
-                        <h3>Create Your Account</h3>
-                        <p>Already Have An Account? <button type="button" data-bs-toggle="modal" data-bs-target="#join">Login In Here</button></p>
-                    </div>
-                    <form action="" class="modal-form">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label>Sponsor ID</label>
-                                    <input type="text" placeholder="Sponsor ID">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label>Enter Full Name</label>
-                                    <input type="text" placeholder="Enter Full Name">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label>Enter Username</label>
-                                    <input type="text" placeholder="Enter Username">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label>Enter Email Address</label>
-                                    <input type="email" placeholder="Enter Email Address">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label>Select Country</label>
-                                    <select name="country" id="country">
-                                        <option>Select Country</option>
-                                        <option>Bangladesh</option>
-                                        <option>Madagascar</option>
-                                        <option>Afghanistan</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label>Enter Phone Number</label>
-                                    <input type="tel" placeholder="Enter Phone Number">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label>Select Security Question</label>
-                                    <select name="question" id="question">
-                                        <option>Select Security Question</option>
-                                        <option>Question 1</option>
-                                        <option>Question 2</option>
-                                        <option>Question 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label>Enter Answer</label>
-                                    <input type="tel" placeholder="Enter Answer">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label class="text-desc" for="confirm"><input type="checkbox" name="text-desc" id="confirm"> I Agreed, the <a href="#">Terms & conditions</a> and <a href="#">Privacy Policy</a></label>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="btn-wrap">
-                                    <button type="submit" class="primary-btn">Register Now <i class="fas fa-arrow-right"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- start breadcrumb area   -->
     <section class="breadcrumb-area">
@@ -388,8 +254,12 @@
     <script src="assets/js/bootstrap.min.js "></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/wow.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/jquery.parallax-scroll.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn2.hubspot.net/hubfs/476360/Chart.js"></script>
+    <script src="https://cdn2.hubspot.net/hubfs/476360/utils.js"></script>
     <!-- custom js -->
     <script src="assets/js/main.js "></script>
 

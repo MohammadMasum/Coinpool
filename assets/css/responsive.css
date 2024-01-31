@@ -82,8 +82,26 @@
         grid-template-columns: 4fr 1fr 7fr;
         gap: 10px;
     }
-    .custom-modal .modal-content .btn-wrap .google-btn {
+    .login-area .modal-content .btn-wrap .google-btn {
         font-size: 16px;
+    }
+    .table {
+        display: block;
+        overflow-x: scroll;
+    }
+    .table td.user-name {
+        min-width: 150px;
+    }
+    .table td.refer {
+        min-width: 150px;
+    }
+    .table .parent-user {
+        min-width: 150px;
+    }
+    .table .current-level {
+        vertical-align: middle;
+        text-align: center;
+        min-width: 120px;
     }
 }
 
@@ -93,6 +111,17 @@
     }
     .timeline-wraper .single-timeline-item.right-item .arrow {
         right: calc(40% - 38px);
+    }
+    .login-area {
+        padding: 150px 0 0;
+    }
+    .presell-btn-wrap {
+        gap: 20px;
+    }
+    .timer-wraper .timer-inner span {
+        font-size: 40px;
+        height: 60px;
+        width: 40px;
     }
 }
 
@@ -108,6 +137,12 @@
         z-index: -1;
         opacity: .4;
         border-radius: 20px;
+    }
+    .presell-btn-wrap {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -328,6 +363,10 @@
     .header-bar .header-bar-left .serch-bar-side {
         width: 100%;
     }
+
+    .coin-distribution-area .title {
+        font-size: 36px;
+    }
 }
 
 
@@ -405,6 +444,9 @@
 }
 
 @media (max-width: 767px) {
+    .login-area {
+        padding: 150px 0 80px;
+    }
     .header-area .navbar .navbar-brand img {
         max-width: 180px;
     }
@@ -424,6 +466,16 @@
     .wallet-address-area .wallet-address-bar {
         font-size: 14px;
     }
+    .paginate-table .pagination {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .paginate-table .dataTables_info {
+        text-align: center;
+    }
+    .footer-area {
+        background: #040D17;
+    }
 }
 
 @media (max-width: 575px) {
@@ -442,17 +494,49 @@
     .coming-soon h2 {
         letter-spacing: 3px;
     }
+    .presell-area .big-note p {
+        font-size: 16px;
+    }
+    .presell-area .big-note {
+        margin-bottom: 40px;
+    }
+    .presell-area .total-supply p {
+        font-size: 16px;
+    }
+    .timer-wraper .timer-inner .label {
+        font-size: 14px;
+    }
+    .timer-wraper .timer-inner span {
+        font-size: 26px;
+        height: 40px;
+        width: 25px;
+        margin: 0 2px;
+    }
+    .timer-wraper .timer-inner {
+        gap: 10px;
+    }
+    .qr-code-area .payment-wrap .single-payment-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .qr-code-area .payment-wrap .single-payment-item h5 {
+        width: 100%;
+    }
+    .qr-code-area .payment-wrap .single-payment-item .right-content {
+        width: 100%;
+        padding: 18px;
+    }
 }
 
 @media (max-width: 425px) {
-    .custom-modal .modal-content .modal-form-head h3 {
+    .login-area .modal-content .modal-form-head h3 {
         font-size: 32px;
     }
-    .custom-modal .modal-content {
+    .login-area .modal-content {
         padding: 40px 15px;
         border-radius: 20px;
     }
-    .custom-modal .modal-content .btn-close {
+    .login-area .modal-content .btn-close {
         right: 15px;
         top: 15px;
     }

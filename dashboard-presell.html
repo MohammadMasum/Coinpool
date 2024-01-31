@@ -15,7 +15,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Mycoinpool-update-profile</title>
+    <title>Mycoinpool-Presell</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
             <div class="sidebar-menu-wrap">
                 <ul class="navigation mb-4">
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/dashboard.svg" alt=""></span> <span class="menu-text">Dashboard</span></a></li>
-                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/presell.svg" alt=""></span> <span class="menu-text">Presell</span></a></li>
+                    <li><a class="active" href="#"><span class="menu-icon"><img src="assets/img/icons/presell.svg" alt=""></span> <span class="menu-text">Presell</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/ico.svg" alt=""></span> <span class="menu-text">ICO</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/air-drop.svg" alt=""></span> <span class="menu-text">Air Drop</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/gift.svg" alt=""></span> <span class="menu-text">Gifts</span></a></li>
@@ -56,7 +56,7 @@
                 <p class="menu-title mb-4">Basic Settings</p>
                 <ul class="navigation">
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/update-profile.svg" alt=""></span> <span class="menu-text">Update Profile</span></a></li>
-                    <li><a class="active" href="#"><span class="menu-icon"><img src="assets/img/icons/update-password.svg" alt=""></span> <span class="menu-text">Update Password</span></a></li>
+                    <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/update-password.svg" alt=""></span> <span class="menu-text">Update Password</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/manage-2fa.png" alt=""></span> <span class="menu-text">Manage 2FA</span></a></li>
                     <li><a href="#"><span class="menu-icon"><img src="assets/img/icons/logout.svg" alt=""></span> <span class="menu-text">Log Out</span></a></li>
                 </ul>
@@ -74,7 +74,7 @@
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <h4>Update Password</h4>
+                                <h4>Presell</h4>
                             </div>
                             <div class="serch-bar-side">
                                 <div class="form-group search">
@@ -106,40 +106,141 @@
                     </div>
                 </div>
             </section>
-            <!-- start verify info area  -->
-            <section class="verify-info-area">
-                <img class="small-circle" src="assets/img/small-circle.png" alt="">
-                <div class="profile-information p-0 bg-transparent">
-                    <h5 class="mb-4">Update your Password</h5>
-                    <form action="#">
-                        <div class="row gy-4">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="current-password">Current Password</label>
-                                    <input type="password" name="current-password" id="current-password" placeholder="helllomr">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="new-password">New Password</label>
-                                    <input type="password" name="new-password" id="new-password" placeholder="New Password">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <label for="confirm-password">Confirm Password</label>
-                                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <button class="primary-btn" type="submit">Update Password <i class="fas fa-arrow-right"></i></button>
-                                </div>
+            
+            <!-- start presell area  -->
+            <section class="presell-area">
+                <div class="row gy-4 align-items-end align-items-xl-center mb-5">
+                    <div class="col-lg-9">
+                        <div class="presell-btn-wrap">
+                            <h5 class="presell-title">Listing Price- $1.45</h5>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="#" class="bordered-btn">BcoinMart.com</a>
+                                <a href="#" class="bordered-btn">ECMCOIN.Com</a>
+                                <a href="#" class="bordered-btn">Crypto Earning</a>
                             </div>
                         </div>
-                    </form>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="idos-social justify-content-lg-end">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center gy-4 mb-4">
+                    <!-- single presell box -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="single-presell-box">
+                            <h5 class="title">Take Metaverse</h5>
+                            <div class="presell-coin-wrap">
+                                <div class="icon">
+                                    <img src="assets/img/ecm-coin.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6>ECM Coin</h6>
+                                    <p>23th Jun 2023 to 16th Dec 2023</p>
+                                </div>
+                            </div>
+                            <div class="presell-price-wrap">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <span>$300</span>
+                                </div>
+                                <span class="closed-btn">CLOSED</span>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                            <p class="note">Private Presell is closed now.</p>
+                        </div>
+                    </div>
+                    <!-- single presell box -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="single-presell-box">
+                            <h5 class="title">Public Pre Sell</h5>
+                            <div class="presell-coin-wrap">
+                                <div class="icon">
+                                    <img src="assets/img/ecm-coin.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6>ECM Coin</h6>
+                                    <p>23th Jun 2023 to 16th Dec 2023</p>
+                                </div>
+                            </div>
+                            <div class="presell-price-wrap">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <span>$300</span>
+                                </div>
+                                <a href="dashboard-presell-package.html" class="bordered-btn">BUY ECM</a>
+                            </div>
+                            <div class="progress-wrap orange-progress">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                            <p class="note">Already 2182 ECM (80%) complete in 28922500 ECM</p>
+                        </div>
+                    </div>
+                    <!-- single presell box -->
+                    <div class="col-xl-4 col-md-6">
+                        <div class="single-presell-box">
+                            <h5 class="title">ECM LOCK</h5>
+                            <div class="presell-coin-wrap">
+                                <div class="icon">
+                                    <img src="assets/img/ecm-coin.svg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6>ECM Coin</h6>
+                                    <p>23th Jun 2023 to 16th Dec 2023</p>
+                                </div>
+                            </div>
+                            <div class="presell-price-wrap">
+                                <div class="price">
+                                    <p>Price</p>
+                                    <span>$300</span>
+                                </div>
+                                <a href="dashboard-presell-package.html" class="bordered-btn">BUY ECM</a>
+                            </div>
+                            <div class="progress-wrap orange-progress">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                            <p class="note">70000000 ECM Coin will be open for sell from 01st March</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="big-note">
+                            <p>ECM coin is an e-commerce coin. With this coin we are making e-commerce transactions.</p>
+                        </div>
+                        <div class="total-supply">
+                            <p>Total Coin Supply : 200000000 ECM</p>
+                            <p>Total Burning Target : 100000000 ECM</p>
+                        </div>
+                    </div>
                 </div>
             </section>
+            <!-- end presell area  -->
+
+            <!-- start coin distribution area  -->
+            <section class="coin-distribution-area">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="title">Coin Distribution</h2>
+                        <img class="img-fluid" src="assets/img/coin-distribution.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- end coin distribution area  -->
         </div>
     </div>
 
