@@ -15,7 +15,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Mycoinpool-air-drop</title>
+    <title>Mycoinpool-Notification</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -74,7 +74,7 @@
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <h4>Air Drop</h4>
+                                <h4>Notification</h4>
                             </div>
                             <div class="serch-bar-side">
                                 <div class="form-group search">
@@ -93,7 +93,34 @@
                                     <img src="assets/img/icons/notification.svg" alt="">
                                 </a>
                                 <div class="card hidden card-trigger1">
-                                    <p>Alex purchased your product right now.</p>
+                                    <div class="single-notification">
+                                        <div class="icon">
+                                            <img src="assets/img/icons/gift-white.svg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h5>Win A Gift</h5>
+                                            <p>1 Month Ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification">
+                                        <div class="icon">
+                                            <img src="assets/img/icons/ecm.svg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h5>ECM Staking Payment</h5>
+                                            <p>1 Month Ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-notification">
+                                        <div class="icon">
+                                            <img src="assets/img/icons/donation-white.svg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h5>Donating Received</h5>
+                                            <p>1 Month Ago</p>
+                                        </div>
+                                    </div>
+                                    <a class="inline-btn w-100 d-block" href="#">See all Notification <i class="ms-2 fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             
@@ -116,75 +143,124 @@
             <!-- start air drop area  -->
             <section class="verify-info-area airdrop-area">
                 <img class="small-circle" src="assets/img/small-circle.png" alt="">
-                <div class="verify-info-head d-sm-flex align-items-center justify-content-between mb-5">   
-                    <div class="airdrop-title-wrap mb-3">
-                        <h5>New Airdrops</h5>
-                        <p>Latest airdrops added to MYCOINPOLL</p>
+                <div class="verify-info-head d-sm-flex align-items-center justify-content-between mb-4">   
+                    <div class="airdrop-title-wrap mb-3 mb-md-0">
+                        <h5 class="mb-0">All Notification</h5>
                     </div>
                     <div class="btn-wrap">
-                        <a href="#" class="primary-btn">Check History <i class="fas fa-arrow-right"></i> </a>
+                        <a href="#" class="primary-btn">Marks All Read</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xxl-9">
-                        <div class="row gy-4 justify-content-center">
-                            <!-- single airdrop item  -->
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="single-airdrop-item">
-                                    <div class="airdrop-thumb">
-                                        <img class="img-fluid w-100" src="assets/img/thumb/airdrop-thumb1.png" alt="">
-                                    </div>
-                                    <h4 class="title">Like Our recent Facebook Post</h4>
-                                    <div class="d-flex justify-content-between price-wrap-small">
-                                        <h5>Earn</h5>
-                                        <h5>Earn</h5>
-                                    </div>
-                                    <div class="d-flex justify-content-between price-wrap-big">
-                                        <h4>USD 202</h4>
-                                        <h4>USD 202</h4>
-                                    </div>
-                                    <a href="#" class="primary-btn w-100">Claim Now <i class="fas fa-arrow-right"></i></a>
+                <table id="referral_user" class="table table-bordered referral-table all-notification">
+                    <thead>
+                        <tr>
+                            <th>SN</th>
+                            <th>Created At</th>
+                            <th>Title</th>
+                            <th>Message</th>
+                            <th>Current Level</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="count">1</td>
+                            <td class="register">
+                                <div class="d-xxl-flex justify-content-center gap-2">
+                                    <span>2024-01-05</span> <span>11:59:23</span>
                                 </div>
-                            </div>
-                            <!-- single airdrop item  -->
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="single-airdrop-item">
-                                    <div class="airdrop-thumb">
-                                        <img class="img-fluid w-100" src="assets/img/thumb/airdrop-thumb2.png" alt="">
-                                    </div>
-                                    <h4 class="title">Make a video about us & Upload</h4>
-                                    <div class="d-flex justify-content-between price-wrap-small">
-                                        <h5>ECM Price</h5>
-                                        <h5>Earn</h5>
-                                    </div>
-                                    <div class="d-flex justify-content-between price-wrap-big">
-                                        <h4>USD 202</h4>
-                                        <h4>USD 202</h4>
-                                    </div>
-                                    <a href="#" class="primary-btn w-100">Claim Now <i class="fas fa-arrow-right"></i></a>
+                            </td>
+                            <td>Win a gift</td>
+                            <td>Win Gift</td>
+                            <td class="status">
+                                <a href="#" class="activate">Read</a>
+                            </td>
+                            <td class="status">
+                                <a href="#" class="deactivate">Mark unread</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="count">1</td>
+                            <td class="register">
+                                <div class="d-xxl-flex justify-content-center gap-2">
+                                    <span>Dbbl=-01452154</span>
                                 </div>
-                            </div>
-                            <!-- single airdrop item  -->
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="single-airdrop-item">
-                                    <div class="airdrop-thumb">
-                                        <img class="img-fluid w-100" src="assets/img/thumb/airdrop-thumb3.png" alt="">
-                                    </div>
-                                    <h4 class="title">Reefer 200 Member </h4>
-                                    <div class="d-flex justify-content-between price-wrap-small">
-                                        <h5>ECM Price</h5>
-                                        <h5>Earn</h5>
-                                    </div>
-                                    <div class="d-flex justify-content-between price-wrap-big">
-                                        <h4>USD 202</h4>
-                                        <h4>USD 202</h4>
-                                    </div>
-                                    <a href="#" class="primary-btn w-100">Claim Now <i class="fas fa-arrow-right"></i></a>
+                            </td>
+                            <td>ECM Staking Payment</td>
+                            <td>Staking Payment</td>
+                            <td class="status">
+                                <a href="#" class="activate">Read</a>
+                            </td>
+                            <td class="status">
+                                <a href="#" class="deactivate">Mark unread</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="count">1</td>
+                            <td class="register">
+                                <div class="d-xxl-flex justify-content-center gap-2">
+                                    <span>2024-01-05</span> <span>11:59:23</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </td>
+                            <td>Win a gift</td>
+                            <td>3rd Level Donation</td>
+                            <td class="status">
+                                <a href="#" class="activate">Read</a>
+                            </td>
+                            <td class="status">
+                                <a href="#" class="deactivate">Mark unread</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="count">1</td>
+                            <td class="register">
+                                <div class="d-xxl-flex justify-content-center gap-2">
+                                    <span>2024-01-05</span> <span>11:59:23</span>
+                                </div>
+                            </td>
+                            <td>Win a gift</td>
+                            <td>3rd Level Donation</td>
+                            <td class="status">
+                                <a href="#" class="activate">Read</a>
+                            </td>
+                            <td class="status">
+                                <a href="#" class="deactivate">Mark unread</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="count">1</td>
+                            <td class="register">
+                                <div class="d-xxl-flex justify-content-center gap-2">
+                                    <span>2024-01-05</span> <span>11:59:23</span>
+                                </div>
+                            </td>
+                            <td>Win a gift</td>
+                            <td>3rd Level Donation</td>
+                            <td class="status">
+                                <a href="#" class="activate">Read</a>
+                            </td>
+                            <td class="status">
+                                <a href="#" class="deactivate">Mark unread</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="count">1</td>
+                            <td class="register">
+                                <div class="d-xxl-flex justify-content-center gap-2">
+                                    <span>2024-01-05</span> <span>11:59:23</span>
+                                </div>
+                            </td>
+                            <td>Win a gift</td>
+                            <td>3rd Level Donation</td>
+                            <td class="status">
+                                <a href="#" class="activate">Read</a>
+                            </td>
+                            <td class="status">
+                                <a href="#" class="deactivate">Mark unread</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             <!-- end air drop area  -->
         </div>

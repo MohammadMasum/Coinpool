@@ -118,9 +118,59 @@
             position: relative;
             z-index: 1;
             .card {
-                p {
-                    font-size: 12px;
-                    margin-bottom: 0;
+                min-width: 280px;
+                background: #081923;
+                border: 1px solid transparent;
+                background-clip: padding-box;
+                border-radius: 10px;
+                padding: 0;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -1px;
+                    bottom: -1px;
+                    left: -1px;
+                    right: -1px;
+                    background: linear-gradient(to right, #174E88, #12775A);
+                    z-index: -1;
+                    border-radius: 10px;
+                    transition: .3s;
+                }
+                .inline-btn {
+                    font-size: 14px;
+                    padding: 12px;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+            .single-notification {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding-top: 0;
+                padding: 12px;
+                border-bottom: 1px solid #ffffff1f;
+                .icon {
+                    height: 36px;
+                    width: 36px;
+                    min-width: 36px;
+                    background: #2284C3;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .content {
+                    h5 {
+                        font-size: 15px;
+                        font-family: $primary-font;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        font-size: 12px;
+                        color: #BFC6D2;
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
@@ -1046,6 +1096,11 @@
 .table {
     border-color: #ffffff14;
     &.referral-table {
+        &.all-notification {
+            td {
+                padding: 15px;
+            }
+        }
         td {
             padding-top: 15px;
         }
@@ -1126,6 +1181,7 @@
             transition: .3s;
             text-align: center;
             line-height: 1;
+            display: inline-block;
             &:before {
                 content: '';
                 position: absolute;
@@ -1151,6 +1207,7 @@
             transition: .3s;
             text-align: center;
             line-height: 1;
+            display: inline-block;
         }
     }
     .action {
@@ -1762,13 +1819,25 @@
     }
 }
 
+.upload-form {
+    textarea {
+        border-radius: 10px;
+        padding: 15px;
+        background: #ffffff0a;
+        width: 100%;
+        border: 1px solid transparent;
+        height: 130px;
+        &::placeholder {
+            color: #BFC6D2;
+            font-size: 12px;
+        }
+    }
+}
 
 .upload-wrap {
     border-radius: 15px;
-    background: #17243E;
-    box-shadow: 4px 4px 4px 0px rgba(31, 46, 77, 0.62) inset;
+    background: #ffffff0a;
     padding: 20px;
-    padding-bottom: 35px;
     height: 100%;
     h5 {
         font-size: 18px;
@@ -1824,29 +1893,58 @@
 }
 
 
-.share-area {
+
+.airdrop-title-wrap {
+    h5 {
+        font-size: 20px;
+        font-family: $title-font;
+    }
+    p {
+        font-size: 13px;
+        color: #BFC6D2;
+        margin-bottom: 0;
+    }
+}
+
+
+.single-airdrop-item {
+    padding: 15px;
+    background: #ffffff0a;
     border-radius: 15px;
-    background: #17243E;
-    box-shadow: 4px 4px 4px 0px rgba(31, 46, 77, 0.62) inset;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    .share-note {
-        position: relative;
-        z-index: 1;
-        padding-left: 42px;
+    .airdrop-thumb {
+        margin-bottom: 15px;
         img {
-            position: absolute;
-            left: 0;
-            top: -4px;
-        }
-        font-size: 15px;
-        color: #FF9494;
-        span {
-            font-family: $title-font;
+            height: 146px;
+            border-radius: 10px;
+            object-fit: cover;
         }
     }
+    .title {
+        font-size: 15px;
+        font-family: $title-font;
+        border-bottom: 1px solid #ffffff14;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+    .price-wrap-small {
+        margin-bottom: 10px;
+        h5 {
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    }
+    .price-wrap-big {
+        margin-bottom: 30px;
+        h4 {
+            font-size: 15px;
+            font-family: $title-font;
+            margin-bottom: 0;
+        }
+    }
+}
 
+
+.share-wrap {
     .single-share-box {
         padding: 15px;
         background: #ffffff0a;
@@ -1864,52 +1962,98 @@
         .share-box-left {
             display: flex;
             align-items: center;
-            gap: 10px;
-            .count {
-                height: 40px;
-                width: 40px;
-                min-width: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50px;
-                border: 1px solid rgba(66, 232, 224, 0.14);
-                background: rgba(222, 255, 253, 0.08);
-            }
-            p {
-                margin-bottom: 0;
-                font-size: 15px;
-                a {
-                    text-decoration: underline;
-                    color: #fff;
+            gap: 15px;
+           .icon {
+                width: 50px;
+                min-width: 50px;
+                height: 50px;
+           }
+           .share-content {
+                h5 {
+                    font-size: 15px;
+                    font-family: $title-font;
                 }
-            }
+                p {
+                    margin-bottom: 0;
+                    font-size: 13px;
+                }
+           }
         }
         .share-box-btn {
-            min-width: 120px;
-            .bordered-btn {
-                background: #1C4D59;
-                background-clip: padding-box;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .text-badge {
+                font-size: 13px;
+                color: #BFC6D2;
+                text-transform: capitalize;
+            }
+            .deactivate {
+                position: relative;
+                border: 1px solid #FFB5B5;
+                background: #3C344D;
                 font-size: 14px;
+                font-family: $primary-font;
+                color: $white;
+                padding: 12px 19px;
+                border-radius: 1000px;
+                transition: .3s;
+                text-align: center;
                 line-height: 1;
-                padding: 11px 17px;
-                justify-content: center;
-                &:hover {
-                    background: transparent;
-                }
+            }
+            .bordered-btn {
+                font-size: 14px;
+                background: #1C4857;
+                background-clip: padding-box;
+                line-height: 1;
+                padding: 11px 20px;
             }
         }
-        &:hover {
-            border: 1px solid #1A5B65;
-            background: #173245;
-            .share-box-btn {
-                .bordered-btn {
-                    background: transparent;
-                    font-size: 14px;
-                    line-height: 1;
-                    padding: 11px 17px;
-                }
-            }
+    }
+}
+
+.airdrop-details-main-wrap {
+    .paragraph {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    h5 {
+        font-family: $title-font;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    ul {
+        padding-left: 20px;
+        list-style: disc;
+        margin-bottom: 15px;
+        li {
+            font-size: 14px;
         }
+    }
+}
+
+
+.inner-details-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background: #ffffff0a;
+    padding: 20px;
+    border-radius: 10px;
+}
+.airdrop-details-box {
+    p {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    h5 {
+        font-family: $title-font;
+        &.colored {
+            color: #FF8F8F;
+        }
+    }
+    .last-para {
+        font-size: 12px;
+        margin-bottom: 0;
     }
 }
